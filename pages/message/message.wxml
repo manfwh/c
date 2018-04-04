@@ -1,0 +1,72 @@
+<view class="container">
+  <!--切换按钮 开始  -->
+  <view class="tabs box-shadow">
+    <view class="box-shadow" bindtap='tapToggle' data-index="0">
+      <view class="tab-btn {{tabIndex == 0 ? 'active' : ''}}">
+        <view class="active-dot"></view>
+        支付提醒
+        <view class="active-dot"></view>
+      </view>
+    </view>
+
+    <view class="box-shadow" bindtap='tapToggle' data-index="1">
+      <view class="tab-btn {{tabIndex == 1 ? 'active' : ''}}">
+        <view class="active-dot"></view>
+        系统消息
+        <view class="active-dot"></view>
+      </view>
+    </view>
+  </view>
+  <view class="msg-list" hidden='{{tabIndex != 0}}'>
+    <view class="msg shadow" bindlongpress="del" bindtap="detail" data-index="{{index}}" wx:for="{{messages}}" wx:key="{{index}}">
+      <image class="msg-pic" src="/images/icons/msg.png"></image>
+      <view class="msg-text text-hidden">{{item.title}}</view>
+      <view class="unread" wx:if="{{!item.read}}"></view>
+      <view class="read" wx:if="{{item.read}}">已读</view>
+    </view>
+
+  </view>
+  <view class="msg-list" hidden='{{tabIndex != 1}}'>
+    <view class="msg shadow" bindlongpress="del" bindtap="detail" data-index="{{index}}" wx:for="{{messages}}" wx:key="{{index}}">
+      <image class="msg-pic" src="/images/icons/msg.png"></image>
+      <view class="msg-text text-hidden">{{item.content}}</view>
+      <view class="unread" wx:if="{{!item.read}}"></view>
+      <view class="read" wx:if="{{item.read}}">已读</view>
+    </view>
+
+  </view>
+</view>
+<!-- 信息详情 开始  -->
+<view class="mask {{detail ? 'show': ''}}" hidden='{{!detail}}'>
+</view>
+<view class="modal-wrap flex-center" hidden='{{!detail}}'>
+  <view class="modal">
+    <view class="modal-header">
+      <view class="unread"></view>
+      <view class="modal-title-wrap">
+        <view class="modal-header-title">消息</view>
+        <view class="modal-header-subTitle">message</view>
+      </view>
+
+      <view class="modal-close" bindtap="close">+</view>
+    </view>
+    <view class="modal-body">
+      <view>活动内容:{{detail.title}}</view>
+      <view>活动规则:{{detail.rules}}</view>
+      <view>注意事项:{{detail.warin}}</view>
+      <view class="modal-body-footer">
+        发布时间
+        <view>{{detail.date}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 信息详情 结束  -->
+
+<!-- 空内容  -->
+<view class="empty" wx:if="{{!messages.length}}">
+  <image src="/images/message-none.png"></image>
+  <view class="title">OH!</view>
+  <view class="text">您还没收到通知哦</view>
+</view>

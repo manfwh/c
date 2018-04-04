@@ -1,0 +1,225 @@
+/* 顶部装饰条  */
+
+page {
+  width: 750rpx;
+  overflow-x: hidden;
+}
+
+.bar {
+  transform: skewX(30deg);
+  top: 0;
+  position: absolute;
+}
+
+.bar1 {
+  width: 258rpx;
+  height: 600rpx;
+  background: #20b59b;
+  right: -200rpx;
+  z-index: -3;
+}
+
+.bar2 {
+  width: 110rpx;
+  height: 308rpx;
+  background: #fff;
+  right: 0;
+  z-index: -2;
+}
+
+.bar3 {
+  width: 234rpx;
+  height: 100rpx;
+  background: #2f57e9;
+  right: 160rpx;
+  z-index: -1;
+}
+
+.bar-top {
+  width: 456rpx;
+  height: 14rpx;
+}
+
+.bar-right {
+  top: 14rpx;
+  width: 24rpx;
+  height: 400rpx;
+}
+
+/*简介  */
+
+.panel-body {
+  /* margin-top: 14rpx; */
+}
+
+.company-pic {
+  width: 654rpx;
+  height: 352rpx;
+  margin: 0 auto;
+  display: block;
+  margin-top: 20rpx;
+  border-radius: 5px;
+}
+
+.introduce .title, .introduce .sub-title, .introduce .time {
+  text-align: center;
+}
+
+.introduce .title {
+  margin-top: 10rpx;
+  font-size: 34rpx;
+  color: #378be8;
+}
+
+.introduce .title::after, .introduce .title::beofre {
+  content: 'gdfgfdfgf';
+  font-size: 48rpx;
+  color: #fff;
+}
+
+.introduce .sub-title {
+  font-size: 30rpx;
+  color: #52ffbc;
+}
+
+.introduce .time {
+  font-size: 18rpx;
+  color: #448b7e;
+}
+
+.company-des {
+  text-align: justify;
+  padding: 25rpx 28rpx 40rpx;
+  letter-spacing: 2px;
+  font-size: 20rpx;
+  color: #777782;
+  line-height: 28rpx;
+}
+
+/* 地图  */
+
+.panel-body .head {
+  height: 66rpx;
+  display: flex;
+  align-items: center;
+}
+
+.panel-body .head .dot {
+  width: 10rpx;
+  height: 10rpx;
+  background: #5ee989;
+  border-radius: 50%;
+  border: 6rpx solid #cef9db;
+  margin: 0 14rpx 0;
+}
+
+.panel-body .head .title {
+  font-size: 34rpx;
+  color: #60606d;
+  font-weight: bold;
+}
+
+.panel-body .foot {
+  padding: 0 20rpx 0;
+  height: 112rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-body .foot .address {
+  font-size: 26rpx;
+  color: #5c5c67;
+  width: 560rpx;
+}
+
+.panel-body .foot .concat {
+  width: 52rpx;
+  height: 52rpx;
+  border-radius: 50%;
+  background: #e3e4f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel-body .foot image {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.dashiList {
+  margin-bottom: 28rpx;
+}
+
+.dashiList .panel-body {
+  padding-left: 25rpx;
+  /* padding-top:  */
+}
+
+.dashiList .panel-title {
+  padding-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.list-item {
+  box-sizing: border-box;
+  background: #e3e4f5;
+  height: 130rpx;
+  border-radius: 5px;
+  width: 654rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 14rpx;
+  padding-left: 24rpx;
+  padding-right: 30rpx;
+}
+
+.list-item .avatar {
+  width: 86rpx;
+  height: 86rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  flex: 1;
+}
+
+.list-item .name {
+  color: #9494a6;
+  font-size: 18rpx;
+}
+
+.list-item .content {
+  color: #6c6c7e;
+  font-size: 24rpx;
+  display: -webkit-box ;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2; 
+  height: 70rpx;
+}
+.comment-wrap {
+  width: 494rpx;
+}
+.like {
+  color: #a7a8b9;
+  font-size: 18rpx;
+}
+
+.avatar-wrap {
+  width: 134rpx;
+}
+
+.like image {
+  width: 16rpx;
+  height: 16rpx;
+}
+
+.like image:last-child {
+  margin-left: 44rpx;
+}
+
+.list {
+  padding-bottom: 26rpx;
+}

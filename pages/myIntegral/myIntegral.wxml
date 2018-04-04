@@ -1,0 +1,94 @@
+<!-- 头部 开始  -->
+<view class="header">
+  <view class="circle"></view>
+  <image class="avatar" src="{{userinfo.avatarUrl}}"></image>
+  <view class="username">
+    {{userinfo.nickName}}
+  </view>
+  <view class="avatar-bar5"></view>
+  
+  <view class="level d-flex">
+    <image src="/images/level-star.png"></image>
+    <image src="/images/level-star.png"></image>
+    <image src="/images/level-star.png"></image>
+    <image src="/images/level-star.png"></image>
+  </view>
+  <view class="avatar-bar-wrap">
+    <view class="avatar-bar1"></view>
+    <view class="avatar-bar2"></view>
+    <view class="avatar-bar3"></view>
+    <view class="avatar-bar4"></view>
+    <view class="avatar-bar7"></view>            
+    <view class="avatar-bar6"></view>
+    <!-- <view class="bar1"></view>
+    <view class="bar1"></view> -->
+  </view>
+</view>
+<!-- 头部 结束  -->
+<view class="container">
+  <view class="panel">
+    <view class="panel-title">
+      <view class="title-bar"></view>
+      <view class="tit-wrap d-flex">
+        <text class="tit">近日增长</text>
+        <text class="sub-tit">GUESS WHAT YOU LIKE</text>
+      </view>
+      <view class="date d-flex">
+        <view></view>
+         03.14  2018
+      </view>
+    </view>
+    <!-- 图标  -->
+    <view class="chart">
+      <view class="chart-nums">
+        <view class="jf">JF</view>
+        <view class="nums">530</view>
+      </view>
+      <view class="more flex-center">
+        MORE
+        <view class="dots">
+          <view></view>
+          <view></view>
+          <view></view>
+        </view>
+      </view>
+    </view>
+    <!-- 累计积分 开始  -->
+    <view class="d-flex justify-content-between">
+      <view class="block">
+        <view class="block-bar g-bar"></view>
+        <view class="block-content">
+          <view class="block-title">累计消费</view>
+          <view class="block-sub-title">BENYUEXIAOFEIQINGDAN</view>
+          <view class="block-nums">
+            JF
+            <text class="block-num">54224</text>
+          </view>
+        </view>
+      </view>
+      <view class="block">
+        <view class="block-bar y-bar"></view>
+        <view class="block-content">
+          <view class="block-title">累计获得</view>
+          <view class="block-sub-title">BENYUEXIAOFEIQINGDAN</view>
+          <view class="block-nums">
+            JF
+            <text class="block-num">54224</text>
+          </view>
+        </view>
+
+      </view>
+    </view>
+    <!-- 累计积分 结束  -->
+    <!-- 底部按钮 开始  -->
+    <view class="d-flex justify-content-between">
+      <view class="btn-wrap box-shadow btn-rule">
+        ·         积分规则     ·
+      </view>
+      <view class="btn-wrap box-shadow btn-exchange" bindtap='navigateTo' data-url="../exchange/exchange">
+        ·         积分兑换     ·
+      </view>
+    </view>
+    <!-- 底部按钮 结束  -->
+  </view>
+</view>

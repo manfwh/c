@@ -1,0 +1,124 @@
+<view class="header">
+  <image class="main-pic" src="/images/usedCar.jpg"></image>
+</view>
+<view class="container">
+  <!-- 颜色分类 开始  -->
+  <view class="color-wrap">
+    <view class="box-shadow" style="background: {{item}}" wx:for="{{colors}}"></view>
+  </view>
+  <!-- 颜色分类 结束  -->
+  <view class="car-title">
+    BSIDEConction
+  </view>
+  <view class="split">··············································</view>
+  <view class="car-tags">
+    <view class="tag">低油耗</view>
+    <view class="tag">低油耗</view>
+    <view class="tag">低油耗</view>
+
+  </view>
+  <!-- 指导价格 开始  -->
+  <view class="car-price d-flex">
+    9.5 - 18.00
+    <view>W</view>
+  </view>
+  <view class="phone">
+    <view class="text">本地二手车指导价</view>
+    <view class="phone-btn flex-center box-shadow">
+      <image src="/images/icons/dialog.png"></image>
+      询底价
+    </view>
+  </view>
+  <!-- 指导价格结束  -->
+  <view class="box box-shadow">
+    <view class="carLogo flex-center">
+      <image src="/images/carLogo.jpg"></image>
+    </view>
+    <view class="carInfo">
+      <view class="d-flex">
+        <view class="block">
+          <view class="dot"></view>
+          <view class="">
+            <view class="text">指导价格</view>
+            <view class="num">12.36W</view>
+          </view>
+        </view>
+        <view class="block">
+          <view class="dot"></view>
+          <view class="block-text">
+            <view class="text">公里数</view>
+            <view class="num">6.0w</view>
+          </view>
+        </view>
+      </view>
+      <view class="d-flex">
+        <view class="block">
+          <view class="dot"></view>
+          <view class="">
+            <view class="text">一汽大众德国合资</view>
+
+          </view>
+        </view>
+        <view class="block">
+          <view class="dot"></view>
+          <view class="block-text">
+            <view class="text">七成新</view>
+
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <!-- 售后服务  开始-->
+  <view class="box box-shadow service">
+    <view class="top-pic">
+      <image src="/images/qw.png"></image>
+    </view>
+    <view class="txt1">30天包退 一年保修</view>
+    <view class="txt2">为了保障每一台二手车的品质可靠</view>
+    <view class="txt2">要求认证二手车源必须严格执行以下认证标准</view>
+    <view class="wrap">
+      <view class="item">
+        <image src="/images/icons/service1.png"></image>
+        <view>多重检测</view>
+      </view>
+      <view class="item">
+        <image src="/images/icons/service2.png"></image>
+        <view>158项排查</view>
+      </view>
+      <view class="item">
+        <image src="/images/icons/service3.png"></image>
+        <view>无重大事故损坏</view>
+      </view>
+    </view>
+    <view class="wrap">
+      <view class="item">
+        <image src="/images/icons/service4.png"></image>
+        <view>无重大改装</view>
+      </view>
+      <view class="item">
+        <image src="/images/icons/service5.png"></image>
+        <view>30天包退</view>
+      </view>
+      <view class="item">
+        <image src="/images/icons/service6.png"></image>
+        <view>1年或2万公里保修</view>
+      </view>
+    </view>
+    
+  </view>
+  <!-- 售后服务 结束  -->
+  <view class="box box-shadow concat">
+    <view class="carLogo">
+      <image src="/images/carLogo.jpg"></image>
+    </view>
+    <view class="adress">
+      <view>上海大众 长风街店</view>
+      <view>400 3897 9200</view>
+    </view>
+    <view class="call" bindtap='call' data-number="40038979200">
+      <image src="/images/icons/call.png"></image>
+    </view>
+  </view>
+</view>

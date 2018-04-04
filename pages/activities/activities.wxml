@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="activities box-shadow">
+    <image class="hot-pic" src="/images/icons/hot.png"></image>
+    <image class="activities-pic" src="/images/tmp/hd-pic.jpg"></image>
+    <view class="activities-info">
+      <view class="activities-title">
+        Summer camp da lian
+      </view>
+      <view class="activities-content text-hidden">
+        凡是本店会员 在活动时间内来店进行保养 均可参加行保养 均可参加
+      </view>
+      <view class="split">·····························.</view>
+      <view class="activities-date">
+        <view class="date-wrap">
+          <image src="/images/webwxgetmsgimg.jpg"></image>
+          2017.8.8·······2017.9.8
+        </view>
+        <view class="activities-status box-shadow">进行中</view>
+      </view>
+    </view>
+
+  </view>
+  <view class="activities box-shadow">
+    <image class="hot-pic" src="/images/icons/hot.png"></image>
+
+    <image class="activities-pic" src="/images/tmp/hd-pic.jpg"></image>
+    <view class="activities-info">
+      <view class="activities-title">
+        Summer camp da lian
+      </view>
+      <view class="activities-content text-hidden">
+        凡是本店会员 在活动时间内来店进行保养 均可参加行保养 均可参加
+      </view>
+      <view class="split">·····························.</view>
+      <view class="activities-date">
+        <view class="date-wrap">
+          <image src="/images/webwxgetmsgimg.jpg"></image>
+          2017.8.8·······2017.9.8
+        </view>
+        <view class="activities-status active box-shadow">已结束</view>
+      </view>
+    </view>
+
+  </view>
+</view>

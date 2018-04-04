@@ -1,0 +1,183 @@
+.header {
+ 
+  padding-top: 86rpx;
+}
+.technicianList view{
+  height: 220rpx;
+  display: flex;
+}
+.header .header-pic {
+  width: 190rpx;
+  height: 190rpx;
+  border-radius: 50%;
+  transform: scale(.6);
+  opacity: .5;
+  margin-right: 66rpx;
+  transition: all .3s;
+}
+.header .header-pic.active {
+  transform: scale(1);
+  opacity: 1;
+}
+.header .levels {
+  display: flex;
+  justify-content: center;
+  margin: 48rpx 0 28rpx 0;
+}
+.header .levels image{
+  width: 29rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+.card {
+  background: #fff;
+  border-radius: 5px;
+  padding:24rpx 68rpx 40rpx 36rpx;
+}
+.card .technician-name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 56rpx;
+  color: #45d5bf;
+}
+.card .technician-name image {
+  width: 45rpx;
+  height: 41rpx;
+}
+.card .tags {
+  display: flex;
+  font-size: 20rpx;
+  color: #7a7985;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.card .tags .dot{
+  width: 6rpx;
+  height: 6rpx;
+  background: #44a9ff;
+  border: 4rpx solid #dfedff;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+.card .tags .dot:last-child {
+  margin-left: 36rpx;
+}
+.card .comment {
+  display: flex;
+  margin-top: 20rpx;
+  margin-bottom: 18rpx;
+}
+.card .comment .comment-label {
+  width: 110rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  background: linear-gradient(to right, #1a54c7, #1674e8);
+  text-align: center;
+  line-height: 40rpx;
+  color: #fff;
+  font-size: 20rpx;
+  box-shadow: 0 0 5px 0 #1674e8;
+  margin-right: 14rpx;
+}
+.card .introduce {
+  font-size: 24rpx;
+  color: #7a7985;
+}
+
+/* 工作安排  */
+.worker {
+  margin-top: 34rpx;
+}
+.worker .worker-header {
+  display: flex;
+  justify-content: space-between;
+}
+.worker .worker-header-bar {
+  width: 4rpx;
+  height: 46rpx;
+  background: linear-gradient(to bottom, #287be8, #21d59c);
+  margin-right: 12rpx;
+}
+.worker .worker-header-title {
+  flex: 1;
+}
+.worker .worker-header-title .title {
+  font-size: 26rpx;
+  color: #8f8e95;
+}
+.worker .worker-header-title .subtitle {
+  font-size: 18rpx;
+  color: #d6d6d8;
+}
+.worker-timer-box {
+  width: 110rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 0 10px 0 #d4ecd6;  
+  align-self: flex-end;  
+}
+.worker .worker-time {
+  height: 40rpx;
+  background: linear-gradient(to right, #41c524, #22c767);
+  box-shadow: inset 0 0 2px 0 #fff;
+  color: #fff;
+  font-size: 18rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 40rpx;
+}
+.worker-table {
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 24rpx;
+}
+.worker-table-row {
+  display: flex;
+  border-bottom: 2rpx solid #e9e9ec;
+}
+.thead {
+  height: 58rpx;
+}
+.tbody {
+  height: 80rpx;
+}
+
+.worker-table-row .th {
+  display: flex;
+  flex: 1;
+  font-size: 18rpx;
+  color: #7a7985;
+  border-right: 2rpx solid #e9e9ec;
+  justify-content: center;
+  align-items: center;
+}
+.worker-table-row .th .active {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  border: 8rpx solid #dbeeff;
+  background: #44a9ff;
+}
+.worker-table-row .am, .worker-table-row .pm {
+  width: 78rpx;
+  height: 40rpx;
+  border-radius: 20rpx;
+  text-align: center;
+  line-height: 40rpx;
+  color: #fff;
+  font-size: 22rpx;
+  box-shadow: 0 0 10px 0 #c3d7f4;
+}
+.worker-table-row .am {
+  background: linear-gradient(to right, #1a54c7, #1674e8);  
+}
+.worker-table-row .pm {
+  background: linear-gradient(to right, #41c524, #22c767);  
+}
+.worker-table-row .dot {
+  margin-right: 10rpx;
+  width: 8rpx;
+  height: 8rpx;
+  background: #44a9ff;
+  border: 4rpx solid #dbeeff;
+  border-radius: 50%;
+}

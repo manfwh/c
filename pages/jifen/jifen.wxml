@@ -1,0 +1,70 @@
+<!-- 装饰条 顶部 -->
+<view class="bars">
+  <view class="top-bar bar1"></view>
+  <view class="top-bar bar2"></view>
+</view>
+<!-- 页面内容   -->
+<view class="container">
+  <view class="header">
+    <view class="dots d-flex">
+      <view class="dot1"></view>
+      <view class="dot2"></view>
+    </view>
+    <view class="text">MY RECORD..</view>
+    <view class="fraction box-shadow">{{fraction}}</view>
+  </view>
+  <view class="main">
+    <view class="vouchers">
+      <view class="voucher box-shadow" bindtap='toDetail' wx:for="{{vouchers}}">
+        <view class="voucher-thum">
+          
+            <image class="thum" src="/images/jifen-pic.jpg"></image>
+          <!-- </view> -->
+          <view class="voucher-thum-dots">
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view><view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            <view></view>
+            
+          </view>
+        </view>
+        <view class="voucher-content">
+          <view class="voucher-name text-hidden">{{item.name}}</view>
+          <view class="voucher-date">
+            <view class="voucher-date-dot"></view>
+            使用时间：{{item.date}}之前
+            <view class="voucher-date-dot"></view>
+            消耗积分：{{item.demand}}            
+          </view>
+          <view class="voucher-hot">
+            <image class="icon-xin" src="/images/icon-xin.png"></image>
+            {{item.like}}
+            <image class="icon-star" src="/images/icon-star.png"></image>  
+            {{item.star}}       
+          </view>
+        </view>
+        <view class="voucher-btn flex-center" data-type="{{item.type}}" data-demand="{{item.demand}}" data-item="{item}}">
+          <view class="voucher-btn-dot"></view>
+          详情
+        </view>
+        <view class="more-btn flex-center">
+          <view></view>
+          <view></view>
+          <view></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 装饰底部  -->
+<view class=" bar bar3"></view>
+<view class="bar bar5"></view>

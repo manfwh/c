@@ -1,0 +1,197 @@
+<view class="header">
+  <image class="bg-pic" src="/images/qianbao-bg.jpg"></image>
+  <view class="container wrap">
+    <view class="unseInfo-wrap">
+      <view class="avatar box-shadow">
+        <image src="{{userinfo.avatarUrl}}"></image>
+      </view>
+      <!-- <navigator url="../record/record" class="record-btn box-shadow-inset">
+        <view class="dot"></view> 
+        收支记录
+        <image class="record-pic" src="/images/wallet-icon1.png"></image>
+      </navigator> -->
+      <view class="text">
+        <view class="txt">Hello!</view>
+        <view class="username">{{userinfo.nickName}}</view>
+      </view>
+      <view class="d-flex info">
+        <view class="info-text">
+          <view class="dot">
+          </view>
+          {{userninfo.gender == 1 ? "MAN" : "WOMAN"}}
+          <view class="dot"></view> SX · XIAODIANQU
+        </view>
+
+        <image class="star" src="/images/five-star.png">
+        </image>
+      </view>
+      <view class="d-flex btn-wrap">
+        <view class="yue-btn flex-center box-shadow-inset">
+          <text class="txt1">余额</text>
+          <text class="balance">600.00</text>
+          <view class="add-icon">+</view>
+        </view>
+        <!--bindtap="payModal"  -->
+        <navigator url="../record/record"  class="ewm-btn flex-center">
+          <text class="txt1">收支记录</text>
+          <image src="/images/wallet-icon1.png"></image> 
+        </navigator>
+      </view>
+    </view>
+    <!-- 卡包管理 开始  -->
+    <view class="panel card">
+      <view class="panel-title">
+        <image src="/images/panel-title2.png"></image>
+        <view class="tit-wrap d-flex">
+          <text class="tit">卡包管理</text>
+          <text class="sub-tit">XIULI DASHI</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  <swiper previous-margin="40rpx" next-margin="40rpx" circular bindchange="change">
+    <swiper-item class="card-item" item-id="0">
+      <image src="/images/card1.jpg"></image>
+    </swiper-item>
+    <swiper-item class="card-item" item-id="1">
+      <image src="/images/card1.jpg"></image>
+    </swiper-item>
+    <swiper-item class="card-item" item-id="2">
+      <image src="/images/card1.jpg"></image>
+    </swiper-item>
+  </swiper>
+
+</view>
+
+<view class="container">
+  <view class="indicator">
+    <view class="dots">
+      <view class="{{selected == 0 ? 'selected': ''}}"></view>
+      <view class="{{selected == 1 ? 'selected': ''}}"></view>
+      <view class="{{selected == 2 ? 'selected': ''}}"></view>
+    </view>
+    <view class="num">
+      <text>0{{selected+1}}</text> 03
+    </view>
+  </view>
+  <view class="cardList">
+    <!-- <view class="card1 secondCard">
+      <view class="card1-header">
+        <view class="card1-title">
+          <view class="tit1">NHANGKAXINXIZHANSHI</view>
+          <view class="tit2">兜兜洗车卡（20次）</view>
+        </view>
+        <image src="/images/ewm.png"></image>
+      </view>
+      <view class="card1-body">
+        <view class="card1-number">
+          <text>CARD NUMBER.</text>
+          <view>6219 9860 8306 6580</view>
+        </view>
+        <view class="d-flex justify-content-between card-info">
+          <view class="card1-name">
+            <text>NAME.</text>
+            <view>Blus.Guo</view>
+          </view>
+          <view class="card1-date">
+            <text>DATE.</text>
+            <view>06 20</view>
+          </view>
+        </view>
+        <view class="card-btn btn-gift">
+          <view>赠送好友</view>
+          <text>ZENGGEIHAOYOU</text>
+        </view>
+      </view>
+    </view> -->
+    <view class="card1 amountCard box-shadow">
+      <view class="card1-header">
+        <view class="card1-title">
+          <view class="tit1">NHANGKAXINXIZHANSHI</view>
+          <view class="tit2">兜兜礼品卡 10000元</view>
+        </view>
+        <image src="/images/ewm.png"></image>
+      </view>
+      <view class="card1-body">
+        <view class="card1-number">
+          <text>CARD NUMBER.</text>
+          <view>6219 9860 8306 6580</view>
+        </view>
+        <view class="d-flex justify-content-between card-info">
+          <view class="card1-name">
+            <text>NAME.</text>
+            <view>Blus.Guo</view>
+          </view>
+          <view class="card1-date">
+            <text>DATE.</text>
+            <view>06 20</view>
+          </view>
+        </view>
+        <view wx:if="{{true}}" class="card-btn btn-recharge">
+          <view>立即充值</view>
+          <text>ZENGGEIHAOYOU</text>
+        </view>
+        <view class="card-btn btn-gift">
+          <view>赠送好友</view>
+          <text>ZENGGEIHAOYOU</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<!--确认支付弹窗 开始  -->
+<view class="yd-modal" wx:if="{{showConfirm}}">
+  <!-- <image class="qc-pic" src="/images/erweima.png"></image> -->
+  <view class="modal-dialog">
+    <view class="close-wrap" bindtap='hideConfirm'>
+    </view>
+    <view class="close" bindtap='hideConfirm'>X</view>
+    <view class="pay-card">
+      <view class="je-wrap">
+        <text class="label">RMB</text>
+        <text class="jine">530.00</text>
+        <view>确认您本次支付金额</view>
+      </view>
+      <view class="pay-card-split">
+        ·············································································
+      </view>
+      <view class="yhq d-flex">
+        <view class="yhq-left">
+          <view class="pic">
+            <image src="/images/yhq.png"></image>
+          </view>
+          <view class="yuan yuan1"></view>
+          <view class="yuan yuan2"></view>
+        </view>
+        <view class="yhq-right">
+          <view class="dots">
+            <view></view>
+            <view></view>
+          </view>
+          <view>
+            <view class="yhq-name">兜兜汽修50元代金券</view>
+            <view class="yhq-date">有效期至：2018.03.22</view>
+          </view>
+          <view class="radio checked flex-center">
+            <view></view>
+          </view>
+        </view>
+      </view>
+      <image class="yhq-foot-pic" src="/images/yhq-foot.jpg"></image>
+      <view class="btn-box flex-center" bindtap='pay'>
+        <view>确认并支付</view>
+        <view>quereryoenbingzhifu</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<!--确认支付弹窗 结束  -->
+
+<view class="yd-modal" wx:if="{{showQr}}">
+  <view class="yd-modal-content">
+    <image class="erweima-pic" src="/images/erweima.png"></image>    
+  </view>
+</view>

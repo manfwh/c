@@ -1,0 +1,144 @@
+<image class="bg-pic" src="/images/sections/11.jpg"></image>
+<view class="container">
+  <view class="header-wrap">
+    <image class="avatar" src="{{userInfo.avatarUrl}}"></image>
+    <view class="username-wrap" bindtap='navigateTo' data-url="../addCar/addCar">
+      <view class="username">
+        Hi,{{userInfo.nickName}}
+        <view class="setting"><image src="/images/icons/17.png"></image></view>
+        
+      </view>
+      <view class="usertag">
+        <view class="dot"></view>改装控
+        <view class="dot"></view>改装控
+      </view>
+    </view>
+    <view class="more-btn">
+      <view></view>
+      <view></view>
+      <view></view>
+    </view>
+  </view>
+  <view class="block">
+    <image class="record-top-pic" src="/images/sections/pic.jpg"></image>
+    <!-- <view class="">
+      <navigator class="record-entry" url='../repair/repair'>
+        <image class="record-pic" src="/images/icons/11.png"></image>
+        <view class="record-text">历史维修保养记录</view>
+        <image src="/images/icons/18.png" class="arrow"></image>
+      </navigator>
+      <navigator class="record-entry" url='../shop/shop'>
+        <image class="record-pic" src="/images/icons/10.png"></image>
+        <view class="record-text">礼品卡在线购买</view>
+        <image src="/images/icons/18.png" class="arrow"></image>
+      </navigator>
+
+    </view> -->
+    <view class="record-entry">
+      <navigator>
+        <image src="/images/33.png"></image>
+      </navigator>
+      <navigator url='../repair/repair'>
+        <image src="/images/22.png"></image>
+      </navigator>
+    </view>
+  </view>
+  <!-- <view class="nav">
+    <view class="row">
+      <navigator url='../company/company'>
+        <image src="/images/icons/a.png"></image>
+        <view>公司简介</view>
+        <text>medical record</text>
+      </navigator>
+      <navigator url='../technician/technician'>
+        <image src="/images/icons/b.png"></image>
+        <view>修理大师</view>
+        <text>Fast acquisition</text>
+      </navigator>
+      <navigator url='../resue/resue'>
+        <image src="/images/icons/c.png"></image>
+        <view>救援定位</view>
+        <text>Famous doctor</text>
+      </navigator>
+    </view>
+
+
+    <view class="row">
+      <navigator url='../share/share'>
+        <image src="/images/icons/d.png"></image>
+        <view>我要推广</view>
+        <text>Famous doctor</text>
+      </navigator>
+      <navigator url='../usedCar/usedCar'>
+        <image src="/images/icons/e.png"></image>
+        <view>二手汽车</view>
+        <text>OLINE Answer</text>
+      </navigator>
+      <navigator url='../activities/activities'>
+        <image src="/images/icons/f.png"></image>
+        <view>活动详情</view>
+        <text>HUODONGXIANGQING</text>
+      </navigator>
+    </view>
+
+  </view> -->
+   <view class="list">
+    <view class="list-item box-shadow" bindtap='navigateTo' data-url="../shop/shop">
+      <image class="item-pic" src="/images/icons/me1.png"></image>
+      <view class="item-name">在线购卡</view>
+      <view class="item-dot d-flex">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+    <view class="list-item box-shadow" bindtap='navigateTo' data-url="../company/company">
+      <image class="item-pic" src="/images/icons/me0.png"></image>
+      <view class="item-name">公司简介</view>
+      <view class="item-dots d-flex">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+    <view class="list-item box-shadow" bindtap='navigateTo' data-url="../rescue/rescue">
+      <image class="item-pic" src="/images/icons/me2.png"></image>
+      <view class="item-name">救援定位</view>
+      <view class="item-dots d-flex">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+    <view class="list-item box-shadow" bindtap='navigateTo' data-url="../activities/activities">
+      <image class="item-pic" src="/images/icons/9.png"></image>
+      <view class="item-name">活动详情</view>
+      <view class="item-dots d-flex">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+    <view class="list-item box-shadow" bindtap='navigateTo' data-url="../jifen/jifen">
+      <image class="item-pic" src="/images/icons/me4.png"></image>
+      <view class="item-name">二手汽车</view>
+      <view class="item-dots d-flex">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+    <view class="list-item box-shadow" bindtap='navigateTo' data-url="../bonus/bonus">
+      <image class="item-pic" src="/images/icons/gd.jpg"></image>
+      <view class="item-name">股东分红</view>
+      <view class="item-dots d-flex">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+  </view>
+   <view class="moreContent">
+    更多内容，敬请期待
+  </view> 
+</view>

@@ -1,0 +1,144 @@
+<view class="container">
+  <view class="header">
+    <scroll-view class="technicianList" scroll-x scroll-with-animation scroll-left="{{scrollLeft}}">
+      <view>
+        <view wx:for="{{arr}}" wx:key="*this" bindtap="tab" data-index="{{index}}">
+          <image class="header-pic {{index==selected? 'active': ''}}" data-index="{{index}}" src="/images/tmp/head.png"></image>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="levels d-flex">
+      <image src="/images/icon-star.png"></image>
+      <image src="/images/icon-star.png"></image>
+      <image src="/images/icon-star.png"></image>
+      <image src="/images/icon-star.png"></image>
+      <image src="/images/icon-star1.png"></image>
+    </view>
+
+  </view>
+  <view class="card box-shadow">
+    <view class="technician-name">
+      <view>Elienna.Chen</view>
+      <image src="/images/zan.png"></image>
+    </view>
+
+    <view class="tags">
+      <view class="dot"></view>
+      高级工程师
+      <view class="dot"></view>
+      技术组长
+    </view>
+    <view class="comment">
+      <view class="comment-label">技术控</view>
+      <view class="comment-label">专注</view>
+      <view class="comment-label">精通</view>
+    </view>
+    <view class="introduce">页上点击鼠选择菜单中查看源文件就可以通过记事网页的实际内容可以网衡量查看源文件就可以通过记事网页的实际内容</view>
+  </view>
+  <!-- 工作安排 开始  -->
+  <view class="worker">
+    <view class="worker-header">
+      <view class="worker-header-bar"></view>
+      <view class="worker-header-title">
+        <view class="title">工作安排</view>
+        <view class="subtitle">Release time</view>
+      </view>
+      <view class="worker-timer-box">
+        <view class="worker-time">
+          工作安排
+        </view>
+      </view>
+
+    </view>
+    <view class="worker-table box-shadow">
+      <view class="worker-table-row thead">
+        <view class="th"></view>
+        <view class="th">
+          <view class="dot"></view>
+          MON
+        </view>
+        <view class="th">
+          <view class="dot"></view>
+          TUE
+        </view>
+        <view class="th">
+          <view class="dot"></view>
+          WED
+        </view>
+        <view class="th">
+          <view class="dot"></view>
+          THU
+        </view>
+        <view class="th">
+          <view class="dot"></view>
+          FRI
+        </view>
+        <view class="th">
+          <view class="dot"></view>
+          SAT
+        </view>
+        <view class="th">
+          <view class="dot"></view>
+          SUN
+        </view>
+
+      </view>
+      <view class="worker-table-row tbody">
+        <view class="th">
+          <view class="am">AM</view>
+        </view>
+        <view class="th">
+          <view class="active"></view>
+
+        </view>
+        <view class="th">
+
+        </view>
+        <view class="th">
+
+        </view>
+        <view class="th">
+
+        </view>
+        <view class="th">
+
+        </view>
+        <view class="th">
+
+        </view>
+        <view class="th">
+
+        </view>
+
+      </view>
+      <view class="worker-table-row tbody">
+        <view class="th">
+          <view class="pm">PM</view>
+        </view>
+        <view class="th">
+
+        </view>
+        <view class="th">
+
+        </view>
+        <view class="th">
+          <view class="active"></view>
+        </view>
+        <view class="th">
+
+        </view>
+        <view class="th">
+
+        </view>
+        <view class="th">
+
+        </view>
+        <view class="th">
+
+        </view>
+
+      </view>
+    </view>
+  </view>
+  <!-- 工作安排 结束  -->
+</view>

@@ -1,0 +1,165 @@
+.empty image {
+  width: 320rpx;
+  height: 392rpx;
+}
+
+/* 选择车辆  */
+.selectCar-wrap {
+  height: 60rpx;
+  display: flex;
+  margin: 30rpx 0;
+}
+.selectCar-wrap .selectCar-bar {
+  display: flex;
+  align-items: center;
+}
+.selectCar-bar .small-bar {
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background: #ffc62b;
+}
+.selectCar-bar .big-bar {
+  width: 38rpx;
+  height: 8rpx;
+  background: #6dc42d;
+  border-radius: 4rpx;
+  margin: 0 10rpx 0 4rpx;
+}
+.selectCar-wrap .car-info {
+  width: 280rpx;
+  box-shadow: inset 0 0 4px 0 #fff;
+  display: flex;
+  justify-content: space-around;
+  font-size: 24rpx;
+  color: #6f707b;  
+  height: 100%;
+  border-radius: 30rpx;
+  background: #fff;
+}
+.selectCar-wrap .box-shadow {
+  border-radius: 30rpx;
+}
+.selectCar-btn {
+  width: 74rpx;
+  height: 38rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 38rpx;
+  background: linear-gradient(to right, #23b051, #2dde42);
+  border-radius: 19rpx;
+  
+}
+
+/* list  */
+.wx-list {
+  margin-top: 20rpx;
+}
+.wx-list .item {
+  box-sizing: border-box;
+  width: 650rpx;
+  height: 142rpx;
+  border-radius: 7px;
+  background: #fff;
+  position: relative;
+  margin:0 auto 38rpx;
+  display: flex;
+  margin-left: 50rpx;
+}
+.item-left {
+  width: 78rpx;
+  position: relative;
+}
+.item-left .pic1 {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.pic2 {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: -50rpx;
+  transform: translateY(-50rpx);
+}
+.item-left .dots {
+  width: 6rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 0;
+  right: -2rpx;
+}
+.item-left .dots view {
+  width: 6rpx;
+  height: 6rpx;
+  border-radius: 50%;
+  background: #fff;
+}
+.item-right .top-icon {
+  width: 54rpx;
+  height: 30rpx;
+  position: absolute;
+  top: -8rpx;
+  right: 14rpx;
+}
+.item-right .bottom-icon {
+  width: 28rpx;
+  height: 28rpx;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.item-right .item-header {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 18rpx;
+}
+.item-header .help-btn {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #2dde42, #23b051);
+  color: #fff;
+  font-size: 26rpx;
+  margin-right: 10rpx;
+  text-align: center;
+  line-height: 30rpx;
+}
+.item-header .item-title {
+  font-size: 30rpx;
+  color: #67687a;
+}
+.item-content {
+  color: #a8a9b3;
+  font-size: 24rpx;
+  width: 490rpx;
+  padding-left: 56rpx;
+}
+.item-footer {
+  color: #696a76;
+  font-size: 18rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  padding-left: 56rpx;
+}
+.item-footer .item-dot {
+  width: 6rpx;
+  height: 6rpx;
+  border-radius: 50%;
+  margin-right: 6rpx;
+}
+.item-footer .item-dot:first-child {
+  background: #ffc62b;
+}
+.item-footer .item-dot:last-child {
+  background: #2dcb56;
+  margin-left: 94rpx;
+}

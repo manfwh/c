@@ -1,0 +1,31 @@
+<view class="wrap" hidden="{{shareSrc}}">
+  <image class="share-pic" src="/images/share.jpg"></image>
+  <button class="btn send" open-type="share"></button>
+  <view class="btn create" bindtap='createPic'></view>
+  <view class="mask flex-center" wx:if="{{showLoading}}">
+    <view class="box">
+      <image class="loadPic1" src="/images/sections/loading-pic2.png"></image>
+      <view class="loadingBar">
+        <image class="loadPic2" src="/images/sections/loading-pic1.png"></image>
+      </view>
+      <view class="text-wrap">
+        <view>正在生成海报</view>
+        <view>
+          请稍候
+          <text class="dot1">.</text>
+          <text class="dot2">.</text>
+          <text class="dot3">.</text>
+        </view>
+      </view>
+
+    </view>
+  </view>
+  
+  <canvas canvas-id="share" hidden style="width:750rpx; height:1055rpx"></canvas>
+  <!-- <view class="animate"></view> -->
+  <!-- <view class="backdrop" animation="{{animationData}}"></view> -->
+</view>
+<view class="share-image" wx:if="{{shareSrc}}">
+    <image class="haibao" src="{{shareSrc}}"></image>
+    <image class="saveBtn" bindtap='save' src="/images/sections/saveBtn.png"></image>
+  </view>

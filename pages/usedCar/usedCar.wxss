@@ -1,0 +1,207 @@
+.header {
+  overflow: hidden;
+}
+.main-pic {
+  width: 750rpx;
+  height: 498rpx;
+}
+.color-wrap {
+  height: 88rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.color-wrap view {
+  width: 90rpx;
+  height: 36rpx;
+  border-radius: 18rpx;
+  margin-right: 20rpx;
+}
+.car-title {
+  color: #4d55dc;
+  font-size: 42rpx;
+  text-align: center;
+}
+.split {
+  width: 100%;
+  overflow: hidden;
+  font-size: 30rpx;
+  color: #e1e1e1;
+  text-align: center;
+}
+.car-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.car-tags .tag {
+  width: 164rpx;
+  height: 58rpx;
+  border-radius: 29rpx;
+  background: #ededed;
+  border: 3rpx solid #226ffe;
+  margin: 0 12rpx 10rpx;
+  text-align: center;
+  line-height: 64rpx;
+  font-size: 26rpx;
+  color: #9c9ea1;
+}
+.car-price {
+  font-size: 72rpx;
+  color: #2c36d8;
+  align-items: center;
+}
+.car-price view {
+  width: 36rpx;
+  height: 36rpx;
+  background: #2c36d8;
+  font-size: 24rpx;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 36rpx; 
+  margin-left: 20rpx;
+  margin-top: 10rpx; 
+}
+.phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32rpx;
+}
+.phone .text{
+  font-size: 26rpx;
+  color: #2c36d8;
+}
+.phone .phone-btn {
+  font-size: 24rpx;
+  color: #2c36d8;
+  width: 160rpx;
+  height: 64rpx;
+  border-radius: 32rpx;
+}
+.phone .phone-btn image {
+  width: 28rpx;
+  height: 26rpx;
+  margin-right: 6rpx;
+}
+
+.box {
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 40rpx;
+}
+.box .block {
+  display: flex;
+  margin-right: 40rpx;
+  width: 250rpx;
+}
+.box .carLogo {
+  width: 180rpx;
+  height: 180rpx;
+}
+.box .carLogo image {
+  width: 180rpx;
+  height: 180rpx;
+}
+.carInfo .d-flex {
+  margin-top: 20rpx;
+}
+.carInfo .dot {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #3498ff;
+  border: 4rpx solid #d6eaff;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+}
+.block .block-text {
+  width: 210rpx;
+}
+.block .text {
+  font-size: 26rpx;
+  color: #2c36d8;
+}
+.block .num {
+  font-size: 30rpx;
+  color: #2c36d8;
+  font-weight: bold;
+}
+
+
+/* 售后服务  */
+.service {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 24rpx;
+  padding-bottom: 55rpx;
+}
+
+.service .top-pic image {
+  width: 175rpx;
+  height: 150rpx;
+  
+}
+.service .txt1 {
+  font-size: 26rpx;
+  color: #24bb76;
+  line-height: 40rpx;  
+  margin-top: 20rpx;
+}
+.service .txt2 {
+  font-size: 20rpx;
+  color: #aaaaaf;
+  line-height: 34rpx;
+}
+.service .wrap {
+  display: flex;
+  width: 100%;
+  margin-top: 48rpx;
+}
+.service .wrap .item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.service  .item image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  box-shadow: 0 0 10rpx 0 #ccc;
+}
+.service  .item view {
+  font-size: 22rpx;
+  color: #ababb1;
+  margin-top: 12rpx;
+}
+
+/* 联系方式  */
+.concat {
+  height: 98rpx;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20rpx;
+}
+.concat .carLogo {
+  width: 98rpx;
+  height: 98rpx;
+}
+.concat .carLogo image{
+  width: 98rpx;
+  height: 98rpx;
+}
+.concat .adress {
+  font-size: 28rpx;
+  color: #9596a1;
+  flex: 1;
+
+}
+.concat .call image{
+  width: 58rpx;
+  height: 36rpx;
+}

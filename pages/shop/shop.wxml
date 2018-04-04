@@ -1,0 +1,103 @@
+<view class="bars">
+  <view class="top-bar bar1"></view>
+  <view class="top-bar bar2"></view>
+</view>
+<view class="wrap">
+  <view class="block">
+    <view class="block-header">
+      <view class="block-title">
+        <view class="block-title-left">
+          <view class="dots">
+            <view></view>
+            <view></view>
+          </view>
+          卡片分类
+          <view class="num-wrap box-shadow">
+            3
+          </view>
+        </view>
+
+        <view class="block-title-btn">
+          使用规则
+        </view>
+      </view>
+    </view>
+    <!--" scroll-into-view="{{cateId}}"{{scrollLeft}}  -->
+    <scroll-view id="scroll" class="block-main" scroll-x scroll-with-animation scroll-left="{{scrollLeft}}" scroll-into-view="{{cateId}}" bind>
+      <view class="block-tabs d-flex" >
+        <view class="block-tab-btn {{selected == index ? 'selected': ''}}" bindtap='selectTab' wx:for="{{cates}}" id="cate{{index}}" wx:key="*this">
+          <image class="tab-pic" src="/images/tab-pic.jpg"></image>
+          <image wx:if="{{selected == index}}" class="tab-selected" src="/images/selected.png"></image>
+        </view>
+        <!-- <view class="block-tab-btn {{selected == 1 ? 'selected': ''}}">
+          <image class="tab-pic" src="/images/tab-pic.jpg"></image>
+          <image wx:if="{{selected == 1}}" class="tab-selected" src="/images/selected.png"></image>
+        </view>
+        <view class="block-tab-btn {{selected == 2 ? 'selected': ''}}">
+          <image class="tab-pic" src="/images/tab-pic.jpg"></image>
+          <image wx:if="{{selected == 2}}" class="tab-selected" src="/images/selected.png"></image>
+        </view> -->
+      </view>
+    </scroll-view>
+  </view>
+  <view class="block">
+    <view class="block-header">
+      <view class="block-title">
+        <view class="block-title-left">
+          <view class="dots">
+            <view></view>
+            <view></view>
+          </view>
+          卡片级别
+
+        </view>
+
+
+      </view>
+
+    </view>
+    <view class="block-main">
+      <view class="row">
+        <view class="product box-shadow {{item.nums ? 'selected': ''}}" wx:for="{{products}}" wx:key="{{item.type}}">
+          <view class="product-name">{{item.name}}</view>
+          <view class="product-price">{{item.price}}
+            <text>元</text>
+          </view>
+          <view class="product-tool">
+            <view hover-class="hover" hover-stay-time="30" class="btn" bindtap='decrement' data-id="{{item.type}}" wx:if="{{item.nums}}">-</view>
+            <view hover-class="hover" hover-stay-time="30" class="btn" bindtap="add" data-id="{{item.type}}">+</view>
+          </view>
+          <view class="num" wx:if="{{item.nums}}">
+            {{item.nums}}
+          </view>
+        </view>
+      
+      </view>
+    </view>
+
+  </view>
+  <view class="footer">
+    <view class="count-wrap">
+      <view class="count">
+        共
+        <text>{{amountSum}}</text>
+        张
+      </view>
+      <view class="total">
+        ￥
+        <text>{{priceSum}}</text>
+      </view>
+    </view>
+    <view class="box-shadow">
+      <view class="buy-btn">
+        <text>·</text>
+        <text>·</text>
+        <text>·</text>
+        购买
+      </view>
+    </view>
+
+  </view>
+</view>
+<view class=" bar bar3"></view>
+<view class="bar bar5"></view>

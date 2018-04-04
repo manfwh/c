@@ -1,0 +1,221 @@
+<!-- 没有维修记录  -->
+
+<view class="empty" wx:if="{{message.length}}">
+  <image src="/images/repair-none.png"></image>
+  <view class="title">EMPTY</view>
+  <view class="text">暂无历史维修记录</view>
+  <view class="sub-text">NO HISTORICAL INSPECTION RESULTS</view>
+</view>
+<block wx:else>
+  <!-- 装饰条 顶部 -->
+  <view class="bars">
+    <view class="top-bar bar1"></view>
+    <view class="top-bar bar2"></view>
+  </view>
+  <view class="container">
+    <!--切换按钮 开始  -->
+    <view class="tabs box-shadow">
+      <view class="box-shadow" bindtap='tapToggle' data-index="0">
+        <view class="tab-btn {{tabIndex == 0 ? 'active' : ''}}">
+          <view class="active-dot"></view>
+          维修记录
+          <view class="active-dot"></view>    
+        </view>
+      </view>
+
+      <view class="box-shadow" bindtap='tapToggle' data-index="1">
+       <view class="tab-btn {{tabIndex == 1 ? 'active' : ''}}">
+          <view class="active-dot"></view>
+          保养记录
+          <view class="active-dot"></view>    
+        </view>
+      </view>
+    </view>
+    <!--切换按钮结束  -->
+    <!-- 选择车辆 开始  -->
+    <view class="selectCar-wrap">
+      <view class="selectCar-bar">
+        <view class="small-bar"></view>
+        <view class="big-bar"></view>
+      </view>
+     
+       <view class="box-shadow">
+        <view class="car-info flex-center">
+          {{car}}
+          <picker class="selectCar-btn" range="{{cars}}" bindchange="selectCar">
+            切换
+          </picker>
+        </view>
+      </view>
+    </view>
+    <!-- 选择车辆 结束  -->
+    <!-- 维修列表 开始  -->
+    <view class="list-wrap">
+      <view class="wx-list" hidden="{{tabIndex != 0}}">
+        <view class="item box-shadow">
+          <view class="item-left">
+            <image src="/images/wxjl1.jpg" class="pic1"></image>
+            <image src="/images/jifen-pic.jpg"class="pic2"></image>
+            <view class="dots">
+              <view></view>
+              <view></view>
+              <view></view>
+           
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+            </view>
+          </view>
+          <view class="item-right">
+            <image class="top-icon" src="/images/wxju-icon.png"></image>
+            <image class="bottom-icon" src="/images/wxju-page.png"></image>
+            <view class="item-header">
+              <view class="help-btn box-shadow">?</view>
+              <view class="item-title">更换德国马牌轮胎</view>
+            </view>
+            <view class="item-content text-hidden">
+              汽车轮胎的正常更换周期为行驶5~8万公里汽车轮胎的正常更换周期为行驶5~8万公里
+            </view>
+            <view class="item-footer">
+              <view class="item-dot"></view>
+              by. James
+              <view class="item-dot"></view>
+              03.25   2018
+            </view>
+          </view>
+        </view>
+        <view class="item box-shadow">
+          <view class="item-left">
+            <image src="/images/wxjl2.jpg" class="pic1"></image>
+            <image src="/images/jifen-pic.jpg"class="pic2"></image>
+            <view class="dots">
+              <view></view>
+              <view></view>
+              <view></view>
+           
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+            </view>
+          </view>
+          <view class="item-right">
+            <image class="top-icon" src="/images/wxju-icon.png"></image>
+            <image class="bottom-icon" src="/images/wxju-page.png"></image>
+            <view class="item-header">
+              <view class="help-btn box-shadow">?</view>
+              <view class="item-title">更换离合器</view>
+            </view>
+            <view class="item-content text-hidden">
+              更换离合器压盘，离合器压片，离合器分离轴承，拨叉
+            </view>
+            <view class="item-footer">
+              <view class="item-dot"></view>
+              by. James
+              <view class="item-dot"></view>
+              03.25   2018
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="wx-list" hidden="{{tabIndex != 1}}">
+        <view class="item box-shadow">
+          <view class="item-left">
+            <image src="/images/wxjl1.jpg" class="pic1"></image>
+            <image src="/images/jifen-pic.jpg"class="pic2"></image>
+            <view class="dots">
+              <view></view>
+              <view></view>
+              <view></view>
+           
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+            </view>
+          </view>
+          <view class="item-right">
+            <image class="top-icon" src="/images/wxju-icon.png"></image>
+            <image class="bottom-icon" src="/images/wxju-page.png"></image>
+            <view class="item-header">
+              <view class="help-btn box-shadow">?</view>
+              <view class="item-title">首次保养</view>
+            </view>
+            <view class="item-content text-hidden">
+              添加制动液，更换机油，后桥油，齿轮油，添加防冻液，
+            </view>
+            <view class="item-footer">
+              <view class="item-dot"></view>
+              by. James
+              <view class="item-dot"></view>
+              03.25   2018
+            </view>
+          </view>
+        </view>
+        <view class="item box-shadow">
+          <view class="item-left">
+            <image src="/images/wxjl2.jpg" class="pic1"></image>
+            <image src="/images/jifen-pic.jpg"class="pic2"></image>
+            <view class="dots">
+              <view></view>
+              <view></view>
+              <view></view>
+           
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+            </view>
+          </view>
+          <view class="item-right">
+            <image class="top-icon" src="/images/wxju-icon.png"></image>
+            <image class="bottom-icon" src="/images/wxju-page.png"></image>
+            <view class="item-header">
+              <view class="help-btn box-shadow">?</view>
+              <view class="item-title">例行保养</view>
+            </view>
+            <view class="item-content text-hidden">
+              更换机油，添加防冻液，机油滤清器，空气滤清器
+            </view>
+            <view class="item-footer">
+              <view class="item-dot"></view>
+              by. James
+              <view class="item-dot"></view>
+              03.25   2018
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 维修列表 结束  -->
+
+  </view>
+  <!-- 装饰底部  -->
+  <view class="bar bar3"></view>
+  <view class="bar bar5"></view>
+</block>

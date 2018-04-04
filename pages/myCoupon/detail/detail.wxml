@@ -1,0 +1,43 @@
+<view class="wrap">
+  <view class="bg-wrap">
+    <image class="bg" src="/images/bg.jpg"></image>
+    <view class="bg-bottom">
+      <view class="dots">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+    <view class="detail">
+      <image class="bg-pic" src="/images/sections/bg2.jpg"></image>
+      <view class="coupon-name">兜兜好车
+        <text>优惠券</text>
+      </view>
+      <view class="split">···························</view>
+      <view class="wran">
+        <view>注意事项</view>
+        <view>2018-02-20前使用均有效</view>
+      </view>
+      <view class="erweima-wrap">
+        <image src="/images/tmp/ewm.jpg"></image>
+        <view class="code">12345678</view>
+      </view>
+
+    </view>
+  </view>
+  <view class="container">
+    <view class="header">
+      <view class="title">
+        兜兜好车优惠券
+      </view>
+      <view>X</view>
+      <view class="text-en">DOUDOUHAOCHE</view>
+      <view class="text-en">YOUHUIQUAN</view>
+    </view>
+    <view class="discount">
+      85
+      <text>%</text>
+    </view>
+
+  </view>
+</view>

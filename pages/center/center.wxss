@@ -1,0 +1,232 @@
+.bg-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 390rpx;
+}
+.header-wrap {
+  margin-top: 46rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 46rpx;
+}
+.header-wrap .avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 54rpx;
+  border: 4rpx solid #fff;
+}
+.header-wrap .username-wrap {
+  flex: 1;
+  margin-left: 30rpx;
+}
+.header-wrap .username {
+  font-size: 56rpx;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+
+}
+.header-wrap .setting {
+  display: flex;
+  align-items: flex-end;
+  padding: 10rpx;
+}
+.header-wrap .setting image{
+  width: 29rpx;
+  height: 29rpx;
+  margin-left: 20rpx;
+}
+.header-wrap .usertag {
+  display: flex;
+  align-items: center;
+}
+.header-wrap .usertag {
+  font-size: 20rpx;
+  color: #d6dafc;
+}
+.header-wrap .usertag view {
+  width: 8rpx;
+  height: 8rpx;
+  background: #d6dafc;
+  margin-right: 8rpx;
+  border-radius: 50%;
+}
+.header-wrap .usertag view:last-child {
+  margin-left: 28rpx;
+}
+.header-wrap .more-btn {
+  align-self: flex-end;
+  margin-right: 16rpx;
+}
+.header-wrap .more-btn view {
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  margin-bottom: 6rpx;
+  background: #daedfc;
+}
+.header-wrap .more-btn view:nth-child(2) {
+  background: #b4dbf9;
+}
+.header-wrap .more-btn view:nth-child(3) {
+  background: #8fc9f7;
+}
+/* 记录查询  */
+.block {
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  padding-top: 26rpx;
+}
+.record-entry {
+  display: flex;
+  justify-content: space-between;
+}
+.record-entry navigator {
+  width: 318rpx;
+  height: 120rpx;
+  border-radius: 10px;
+  box-shadow: 0 2rpx 20rpx #999;
+
+}
+.record-entry navigator image {
+    width: 318rpx;
+  height: 120rpx;
+}
+.record-top-pic {
+  width: 651rpx;
+  height: 234rpx;
+  margin-bottom: 14rpx;
+}
+.record-entry {
+  margin: 0 22rpx;
+  border-bottom: 2rpx solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24rpx;
+  padding-top: 20rpx;
+}
+.record-entry:last-child {
+  border: none;
+}
+.record-entry .record-text {
+  flex: 1;
+  font-size: 28rpx;
+  color: rgba(42, 41, 58, .8);
+  margin-left: 35rpx;
+  font-weight: bold;
+  text-align: left;  
+}
+.record-entry .record-pic {
+  width: 52rpx;
+  height: 54rpx;
+}
+.record-entry .arrow {
+  width: 14rpx;
+  height: 21rpx;
+}
+
+/* 底部导航  */
+.nav {
+  margin-top: 40rpx; 
+}
+.nav .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 32rpx;
+}
+.nav image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.nav navigator {
+  width: 210rpx;
+  height: 182rpx;
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav navigator view {
+  font-size: 22rpx;
+  color: rgba(1, 1, 1, .5);
+  font-weight: bold;
+}
+.nav navigator text {
+  font-size: 18rpx;
+  color: rgba(0, 0, 0, .2);
+}
+
+/* 更多内容  */
+.moreContent {
+  height: 80rpx;
+  background: #ffef2f;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  color: #2a2f39;
+  margin-top: 36rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+}
+
+
+
+
+
+
+
+
+
+.list {
+  margin-top: 30rpx;
+}
+.list-item {
+  height: 92rpx;
+  border-radius: 5px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14rpx;
+}
+.list-item .item-pic {
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  margin-left: 18rpx;
+  margin-right: 24rpx;
+}
+.list-item .item-name {
+  color: #666;
+  font-size: 28rpx;
+  flex: 1;
+  font-weight: bold;
+}
+.list-item .item-dot {
+  width: 16rpx;
+  height: 16rpx;
+  background: #f80577;
+  border: 6rpx solid #fecde4;
+  border-radius: 50%;
+  margin-right: 35rpx;
+}
+.list-item .item-dots {
+  margin-right: 32rpx;
+}
+.list-item .item-dots view{
+  width: 8rpx;
+  height: 8rpx;
+  background: #dedede;
+  border-radius: 50%;
+  margin-left: 4rpx;
+}

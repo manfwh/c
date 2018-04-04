@@ -1,0 +1,61 @@
+<view class="bars">
+  <view class="top-bar bar1"></view>
+  <view class="top-bar bar2"></view>
+</view>
+
+<view class="container">
+  <view class="panel">
+    <view class="panel-title">
+      <image src="/images/panel-title2.png"></image>
+      <view class="tit-wrap d-flex">
+        <text class="tit">请完善您的求助信息</text>
+        <text class="sub-tit">PLEASE FILL IN YOUR APPLICATION INFORMATION</text>
+      </view>
+    </view>
+    <form>
+      <view class="form-group box-shadow">
+        <image class="label" src="/images/step1-1.png"></image>
+        <input type="text" name="name" placeholder='请在此处填写您的姓名' value="{{name}}" bindblur="update" data-type="name"></input>
+      </view>
+      <view class="form-group box-shadow">
+        <image class="label" src="/images/step1-2.png"></image>
+        <input type="text" name="gender" placeholder='请在此处填写您的性别' disabled value='{{gender}}'></input>
+        <view class="gender-group">
+          <radio-group class="radio-group" bindchange="genderChange">
+            <label for="man">
+              <radio id="man" hidden name="gender" value='男' /> 男
+              <view class="radio">
+                <view wx:if="{{gender == '男' }}" class="radio-checked"></view>
+              </view>
+            </label>
+            <label for="woman">
+              <radio id="woman" hidden name="gender" value='女' /> 女
+              <view class="radio">
+                <view wx:if="{{gender == '女'}}" class="radio-checked"></view>
+              </view>
+            </label>
+          </radio-group>
+        </view>
+      </view>
+      <view class="form-group box-shadow">
+        <image class="label" src="/images/step1-3.png"></image>
+        <input type="number" bindblur="update" data-type="phone" name="phonenumber" placeholder='请在此处填写您的手机号' value="{{phonenumber}}"></input>
+      </view>
+      <view class="form-group box-shadow">
+        <image class="label" src="/images/step2-2.png"></image>
+        <input name="location" placeholder='读取您的实时位置' disabled value='{{location}}'></input>
+        <view class="getLocationBtn getInfoBtn">
+          <button plain loading='{{loading}}' bindtap='getLocation'>
+            {{LocationBtnValue}}
+          </button>
+        </view>
+      </view>
+
+
+
+      <button class="submitBtn" bindtap="submit" >立即求助</button>
+    </form>
+  </view>
+</view>
+<view class=" bar bar3"></view>
+<view class="bar bar5"></view>

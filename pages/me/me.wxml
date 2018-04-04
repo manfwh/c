@@ -1,0 +1,59 @@
+<view class="header">
+  <view class="avatar-wrap">
+    <image class="bg-pic" src="/images/sections/avatar-bg.png"></image>
+    <image class="avatar" src="{{userinfo.avatarUrl}}"></image>
+  </view>
+  <view class="username">{{userinfo.nickName}}</view>
+  <view class="user-des">Classmates who kept on sending small sheet for the end of the semester</view>
+  <view class="btn-wrap flex-center">
+    <image src="/images/icons/5.png"></image>
+    <image src="/images/icons/4.png" bindtap='navigateTo' data-url="../wallet/wallet"></image>
+  </view>
+</view>
+<view class="container">
+  <view class="main-header">
+    <view class="box">
+      <view class="dot"></view>
+      我的资料
+      <view class="dot"></view>
+    </view>
+  </view>
+  <view class="list">
+    <view class="list-item box-shadow" bindtap='navigateTo' data-url="../myIntegral/myIntegral">
+      <image class="item-pic" src="/images/icons/6.png"></image>
+      <view class="item-name">我的积分</view>
+      <view class="item-dot d-flex">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+    <view class="list-item box-shadow" bindtap='navigateTo' data-url="../exchange/exchange">
+      <image class="item-pic" src="/images/icons/7.png"></image>
+      <view class="item-name">积分商城</view>
+      <view class="item-dots d-flex">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+    <view class="list-item box-shadow" bindtap='navigateTo' data-url="../myCoupon/myCoupon">
+      <image class="item-pic" src="/images/icons/8.png"></image>
+      <view class="item-name">我的优惠</view>
+      <view class="item-dots d-flex">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+    <view class="list-item box-shadow" bindtap='navigateTo' data-url="../activities/activities">
+      <image class="item-pic" src="/images/icons/9.png"></image>
+      <view class="item-name">活动详情</view>
+      <view class="item-dots d-flex">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+  </view>
+</view>

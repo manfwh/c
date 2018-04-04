@@ -1,0 +1,169 @@
+<!--index.wxml-->
+<!-- <button bindtap="navigateTo" data-url="../demo/demo">demo</button>  -->
+<image class="header-bg" src="/images/header-bg.jpg"></image>
+<view class="container">
+  <!-- 头部 开始 -->
+  <view class="header">
+    <view class="userinfo-wrap">
+      <view class="avatar-wrap">
+        <image src="{{userinfo.avatarUrl}}"></image>
+      </view>
+      <view class="car-info">
+        <view class="label">集团</view>
+        <view class="username">
+          {{userinfo.nickName}}
+          <text>千禧集团</text>
+        </view>
+        <view class="carNumber">车牌号：晋A·00865 车型：路虎发现(2018款)</view>
+      </view>
+    </view>
+  </view>
+  <!-- 头部 结束  -->
+  <!-- 车辆切换 开始  -->
+  <swiper class="carList-wrap box-shadow" indicator-dots>
+    <swiper-item wx:for="{{carList}}" class="">
+      <view class="row">
+        <view class="dot"></view>
+        <view class="item-name">车辆评估</view>
+        <view class="pg">
+          <block wx:if="{{item.vehicleEvaluation == 1}}">
+            <view class="dd d"></view>
+            <view class="dd"></view>
+            <view class="dd"></view>
+            <view class="dd"></view>
+            <view class="dd"></view>
+          </block>
+          <block wx:if="{{item.vehicleEvaluation == 2}}">
+            <view class="dd d"></view>
+            <view class="dd d"></view>
+            <view class="dd"></view>
+            <view class="dd"></view>
+            <view class="dd"></view>
+          </block>
+          <block wx:if="{{item.vehicleEvaluation == 3}}">
+            <view class="dd d"></view>
+            <view class="dd d"></view>
+            <view class="dd d"></view>
+            <view class="dd"></view>
+            <view class="dd"></view>
+          </block>
+          <block wx:if="{{item.vehicleEvaluation == 4}}">
+            <view class="dd d"></view>
+            <view class="dd d"></view>
+            <view class="dd d"></view>
+            <view class="dd d"></view>
+            <view class="dd"></view>
+          </block>
+          <block wx:if="{{item.vehicleEvaluation == 5}}">
+            <view class="dd d"></view>
+            <view class="dd d"></view>
+            <view class="dd d"></view>
+            <view class="dd d"></view>
+            <view class="dd d"></view>
+          </block>
+        </view>
+      </view>
+      <view class="row">
+        <view class="dot"></view>
+        <view class="item-name">项目推荐</view>
+        <text class="text-hidden">{{item.projectRem}}</text>
+      </view>
+      <view class="row">
+        <view class="dot"></view>
+        <view class="item-name">保险到期日</view>
+        <text>{{item.imd}}</text>
+      </view>
+      <view class="row">
+        <view class="dot"></view>
+        <view class="item-name">车辆年检日</view>
+        <text>{{item.vand}}</text>
+      </view>
+      <view class="addCar" bindtap='navigateTo' data-url="../addCar/addCar">
+        <view class="btn-dots flex-center">
+          <view class="col1"></view>
+          <view class="col2"></view>
+          <view class="col3"></view>
+        </view>
+        添加车辆
+        <view class="btn-dots flex-center">
+          <view class="col3"></view>
+          <view class="col2"></view>
+          <view class="col1"></view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+  <!-- 车辆切换 结束  -->
+  <!-- 数据-维修 开始  -->
+  <view class="d-flex justify-content-between">
+    <view class="flex-center entry box-shadow">
+      <image src="/images/22.png"></image>
+      <view>
+        <view class="entry-name">数据 · 诊断</view>
+        <view class="entry-text">ORDER REGISTER</view>
+      </view>
+    </view>
+    <view class="flex-center entry box-shadow" bindtap='navigateTo' data-url="../repair/repair">
+      <image src="/images/33.png"></image>
+      <view>
+        <view class="entry-name">维修 · 记录</view>
+        <view class="entry-text">Inspection report</view>
+      </view>
+    </view>
+  </view>
+  <!-- 数据-维修 结束  -->
+  <!--快速工具 开始  -->
+  <view class="panel">
+
+    <view class="panel-main">
+      <view class="item" bindtap='navigateTo' data-url="../company/company">
+        <image src="/images/icons/44.png"></image>
+        <view class="item-name">公司简介</view>
+        <view class="item-text">medical record</view>
+      </view>
+
+      <view class="item" bindtap='navigateTo' data-url="../technician/technician">
+        <image src="/images/icons/55.png"></image>
+        <view class="item-name">修理大师</view>
+        <view class="item-text">FAST ACQUISITION</view>
+      </view>
+      <view class="item" bindtap='navigateTo' data-url="../rescue/rescue">
+        <image src="/images/icons/66.png"></image>
+        <view class="item-name">救援定位</view>
+        <view class="item-text">medical record</view>
+      </view>
+      <view class="item" bindtap='call'>
+        <image src="/images/icons/77.png"></image>
+        <view class="item-name">联系客服</view>
+        <view class="item-text">medical record</view>
+      </view>
+      <view class="item" bindtap='navigateTo' data-url="../message/message">
+        <image src="/images/icons/88.png"></image>
+        <view class="item-name">消息提醒</view>
+        <view class="item-text">medical record</view>
+      </view>
+      <view class="item" bindtap='navigateTo' data-url="../share/share">
+        <image src="/images/icons/99.png"></image>
+        <view class="item-name">我要推广</view>
+        <view class="item-text">FAMOUS DOCTOR</view>
+      </view>
+      <view class="item" bindtap='navigateTo' data-url="../jifen/jifen">
+        <image src="/images/icons/100.png"></image>
+        <view class="item-name">二手汽车</view>
+        <view class="item-text">OLINE ANSWER</view>
+      </view>
+    </view>
+  </view>
+  <!--快速工具 结束  -->
+
+
+</view>
+<!-- 新用户弹窗   -->
+<view class="modal" wx:if="{{showNewUserModal}}" animation="{{animationModal}}" animationiteration="hideNewUserModal">
+  <view class="newUsrWrap" animation="{{animationData}}">
+    <image src="/images/111.png"></image>
+    <view class="btn" bindtap='navigateTo' data-url="../addCar/addCar">立即领取</view>
+    <view class="close" bindtap='closeNewUserModal'>X</view>
+  </view>
+
+</view>

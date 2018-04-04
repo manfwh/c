@@ -1,0 +1,557 @@
+<!-- 装饰条 顶部 -->
+<view class="bars">
+  <view class="top-bar bar1"></view>
+  <view class="top-bar bar2"></view>
+</view>
+<view class="container">
+  <view class="header">
+    <view class="dots d-flex">
+      <view class="dot1"></view>
+      <view class="dot2"></view>
+    </view>
+    <view class="text">MY RECORD..</view>
+    <view class="fraction box-shadow">32</view>
+  </view>
+  <!-- 选项卡 开始  -->
+  <view class="tab">
+    <view class="tab-title">
+      <view class="tab-btn box-shadow {{selected==0? 'selected': ''}}" bindtap='tab' data-index="0">
+        <view class="dot"></view>
+        维修类
+        <view class="dot"></view>
+      </view>
+      <view class="tab-btn box-shadow m-auto {{selected==1? 'selected': ''}}" bindtap='tab' data-index="1">
+        <view class="dot"></view>
+        保养类
+        <view class="dot"></view>
+      </view>
+      <view class="tab-btn box-shadow {{selected==2? 'selected': ''}}" bindtap='tab' data-index="2">
+        <view class="dot"></view>
+        储值类
+        <view class="dot"></view>
+      </view>
+    </view>
+    <view class="tab-content">
+      <view class="pro-list d-flex justify-content-between" wx:if="{{selected==0}}">
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">维修类 </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+      </view>
+      <view class="pro-list d-flex justify-content-between" wx:if="{{selected==1}}">
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">保养类 </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+      </view>
+      <view class="pro-list d-flex justify-content-between" wx:if="{{selected==2}}">
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">储值类</view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+        <view class="pro-item">
+          <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+          <view class="pro-info box-shadow">
+            <view class="pro-name">Plastic hand </view>
+            <view class="pro-price">
+              1000.00
+              <text>积分</text>
+            </view>
+            <view class="btn-wrap">
+              <view class="buy-btn flex-center">
+                <view class="dots d-flex">
+                  <view class="bg1"></view>
+                  <view class="bg2"></view>
+                  <view class="bg3"></view>
+                </view>
+                购买
+              </view>
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 选项卡 结束  -->
+
+  <!-- <view class="main">
+    <view class="pro-list d-flex justify-content-between">
+      <view class="pro-item">
+        <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+        <view class="pro-info box-shadow">
+          <view class="pro-name">Plastic hand </view>
+          <view class="pro-price">
+            1000.00
+            <text>积分</text>
+          </view>
+          <view class="btn-wrap">
+            <view class="buy-btn flex-center">
+              <view class="dots d-flex">
+                <view class="bg1"></view>
+                <view class="bg2"></view>
+                <view class="bg3"></view>
+              </view>
+              购买
+            </view>
+          </view>
+
+        </view>
+      </view>
+      <view class="pro-item">
+        <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+        <view class="pro-info box-shadow">
+          <view class="pro-name">Plastic hand </view>
+          <view class="pro-price">
+            1000.00
+            <text>积分</text>
+          </view>
+          <view class="btn-wrap">
+            <view class="buy-btn flex-center">
+              <view class="dots d-flex">
+                <view class="bg1"></view>
+                <view class="bg2"></view>
+                <view class="bg3"></view>
+              </view>
+              购买
+            </view>
+          </view>
+
+        </view>
+      </view>
+      <view class="pro-item">
+        <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+        <view class="pro-info box-shadow">
+          <view class="pro-name">Plastic hand </view>
+          <view class="pro-price">
+            1000.00
+            <text>积分</text>
+          </view>
+          <view class="btn-wrap">
+            <view class="buy-btn flex-center">
+              <view class="dots d-flex">
+                <view class="bg1"></view>
+                <view class="bg2"></view>
+                <view class="bg3"></view>
+              </view>
+              购买
+            </view>
+          </view>
+
+        </view>
+      </view>
+      <view class="pro-item">
+        <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+        <view class="pro-info box-shadow">
+          <view class="pro-name">Plastic hand </view>
+          <view class="pro-price">
+            1000.00
+            <text>积分</text>
+          </view>
+          <view class="btn-wrap">
+            <view class="buy-btn flex-center">
+              <view class="dots d-flex">
+                <view class="bg1"></view>
+                <view class="bg2"></view>
+                <view class="bg3"></view>
+              </view>
+              购买
+            </view>
+          </view>
+
+        </view>
+      </view>
+      <view class="pro-item">
+        <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+        <view class="pro-info box-shadow">
+          <view class="pro-name">Plastic hand </view>
+          <view class="pro-price">
+            1000.00
+            <text>积分</text>
+          </view>
+          <view class="btn-wrap">
+            <view class="buy-btn flex-center">
+              <view class="dots d-flex">
+                <view class="bg1"></view>
+                <view class="bg2"></view>
+                <view class="bg3"></view>
+              </view>
+              购买
+            </view>
+          </view>
+
+        </view>
+      </view>
+      <view class="pro-item">
+        <image src="/images/tab-pic.jpg" class="pro-pic"></image>
+        <view class="pro-info box-shadow">
+          <view class="pro-name">Plastic hand </view>
+          <view class="pro-price">
+            1000.00
+            <text>积分</text>
+          </view>
+          <view class="btn-wrap">
+            <view class="buy-btn flex-center">
+              <view class="dots d-flex">
+                <view class="bg1"></view>
+                <view class="bg2"></view>
+                <view class="bg3"></view>
+              </view>
+              购买
+            </view>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </view> -->
+</view>
+<!-- 装饰底部  -->
+<view class=" bar bar3"></view>
+<!-- <view class="bar bar4"></view> -->
+<view class="bar bar5"></view>

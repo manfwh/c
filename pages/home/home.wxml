@@ -1,0 +1,163 @@
+<image class="bg-pic" src="/images/sections/11.jpg"></image>
+<!-- <navigator class="admin" url='../demo/demo'>后台</navigator> -->
+<view class="container">
+  <view class="header-wrap">
+    <view class="userinfo">
+      <view class="d-flex username">
+        <view class="text-hidden">{{userInfo.nickName}}</view>
+        
+        <view class="tag">
+          集团
+        </view>
+      </view>
+      <view class="usercar">
+        车型：{{curCar.brand}}    {{curCar.model}}
+        <text>千禧集团</text>
+      </view>
+    </view>
+    <!-- <navigator></navigator> -->
+    <navigator class="userbalance" url='../wallet/wallet' hover-class="none">
+      <view class="userbalance-nums d-flex align-items-center">
+        {{userInfo.balance}}
+        <image class="arrow" src="/images/icons/14.png"></image>
+      </view>
+      <view class="userbalance-text d-flex align-items-center">
+        <image class="icon-moneny" src="/images/icons/moneny.png"></image>
+        当前余额
+      </view>
+    </navigator>
+  </view>
+  <view class="block shadow">
+    <swiper class="cars" indicator-dots bindchange="toggleCar">
+      <swiper-item wx:for="{{userInfo.cars}}" wx:key="plate">
+        <view class="top-row">
+          <image class="toprow-pic" src="/images/icons/13.png"></image>
+          <view class="item-key">车辆评估</view>
+          <view class="level">
+            <block wx:if="{{item.level == 0 }}">
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+            </block>
+            <block wx:if="{{item.level == 1 }}">
+              <view class="active"></view>
+              <view></view>
+              <view></view>
+              <view></view>
+              <view></view>
+            </block>
+            <block wx:if="{{item.level == 2 }}">
+              <view class="active"></view>
+              <view class="active"></view>
+              <view></view>
+              <view></view>
+              <view></view>
+            </block>
+            <block wx:if="{{item.level == 3 }}">
+              <view class="active"></view>
+              <view class="active"></view>
+              <view class="active"></view>
+              <view></view>
+              <view></view>
+            </block>
+          </view>
+        </view>
+        <view class="row" style="padding-top:20rpx">
+          <view class="dot"></view>
+          <view class="item-key">车牌号码</view>
+          <view class="item-val">{{item.plate}}</view>
+          <!-- <view>
+          <image src="/images/icons/13.png"></image>
+         </view> -->
+        </view>
+        <view class="row">
+          <view class="dot"></view>
+          <view class="item-key">项目推荐</view>
+          <view class="item-val d-flex align-items-center">
+            <text class="detail-text text-hidden">{{item.recommend}}</text>
+            <view class="detail" wx:if="{{item.recommend !== '暂无推荐'}}">详情</view>
+          </view>
+          <!-- <view>
+          <image src="/images/icons/13.png"></image>
+         </view> -->
+        </view>
+        <view class="row">
+          <view class="dot"></view>
+          <view class="item-key">车辆年检日</view>
+          <view class="item-val">{{item.yearlyInspectionDate}}</view>
+        </view>
+        <view class="row">
+          <view class="dot"></view>
+          <view class="item-key">保险到期日</view>
+          <view class="item-val">{{item.insuranceMaturity}}</view>
+        </view>
+        <view class="car-bg-pic">
+          <image src="/images/sections/yun.png"></image>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <navigator class="addCarBtn" url="../addCar/addCar?add=true">
+          <view class="add">+</view>
+          <view class="addText">添加车辆</view>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="notice text-hidden">
+    公告：即日起开启兜兜汽修秒杀拼团活动！！！  点击查看活动详情点击查看活动详情
+  </view>
+  <view class="footer">
+    <view class="info-wrap shadow">
+      <navigator class="box" url='../myIntegral/myIntegral' hover-class="none">
+        <view class="box-top">
+         <view class="dot dot1"></view>
+          {{userInfo.integral}}
+        </view>
+        <text>积分奖励</text>
+      </navigator>
+      <navigator class="box" url='../myCoupon/myCoupon' hover-class="none">
+        <view class="box-top">
+         <view class="dot dot2"></view>
+          {{userInfo.coupon.length}}
+        </view>
+        <text>优惠券福利</text>
+      </navigator>
+      <navigator class="box d-flex align-items-center" url='../myCoupon/myCoupon' hover-class="none">
+        <view class="dots">
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+        </view>
+        <view class="arrow">
+          <image src="/images/icons/14.png"></image>
+        </view>
+      </navigator>
+      <navigator class="box msg" url='../message/message' hover-class="none">
+        <image src="/images/icons/12.png"></image>
+        <view>消息提醒</view>
+      </navigator>
+    </view>
+    <view class="d-flex justify-content-between">
+      <navigator class="share-btn flex-center" hover-class="none" url='../share/share'>
+        <image src="/images/icons/15.png"></image>
+        分享给好友  获取积分福利！
+      </navigator>
+      <navigator class="me-btn flex-center" hover-class="none" url='../center/center'>
+        <image src="/images/icons/16.png"></image>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+
+<!-- 新用户弹窗   -->
+<view class="modal" wx:if="{{showNewUserModal}}" animation="{{animationModal}}" animationiteration="hideNewUserModal">
+  <view class="newUsrWrap" animation="{{animationData}}">
+    <image src="/images/111.png"></image>
+    <navigator class="btn" bindtap='navigateTo' url="../addCar/addCar">立即领取</navigator>
+    <view class="close" bindtap='closeNewUserModal'>X</view>
+  </view>
+</view>

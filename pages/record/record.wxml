@@ -1,0 +1,116 @@
+<view class="container">
+  <view class="header justify-content-between">
+    <view class="search-wrap">
+      <view class="dots flex-center">
+        <view></view>
+        <view></view>
+      </view>
+      <input class="input-search" placeholder='' placeholder-style="color: #5682ff; font-size: 24rpx;" value="{{input}}" bindblur="updateInput"></input>
+      <view class="searc-btn">
+        <image class="icon-search" src="/images/icons/search.png" bindtap='searchHandle'></image>
+      </view>
+
+    </view>
+
+    <view class="cate-wrap">
+      <picker class="cate-btn flex-center" mode="date" fields="month" end="{{pickerDateEnd}}" bindchange="getInfo">
+        <image class="icon-pic" src="/images/icons/cate.png"></image>
+      </picker>
+    </view>
+    <!-- <picker mode="date" cate="{{true}}"></picker> -->
+  </view>
+  <view class="list-wrap">
+    <view class="info-wrap flex-center-between">
+      <view class="left flex-center-between">
+        <view class="dots d-flex">
+          <view></view>
+          <view></view>
+        </view>
+        <view class="text">MY PLANT..</view>
+        <view class="nums">+800</view>
+      </view>
+      <view class="right d-flex">
+        <view class="text1">累计消费</view>
+        <view class="total">26300</view>
+        <view class="text2">元</view>
+      </view>
+    </view>
+  </view>
+  <view class="tab-content">
+    <view class="item box-shadow">
+      <view class="item-title">定期保养消费</view>
+      <view class="item-content text-ellipsis">
+       更换机油，机油滤，空气滤
+      </view>
+      <view class="split">
+        ······································
+      </view>
+      <view class="item-footer align-items-center d-flex">
+        <view class="code-label">No</view>
+        123456789
+        <image src="/images/icons/date.png"></image>
+        2018-03-02
+      </view>
+      <view class="moneny-wrap box-shadow">
+        200
+        <text>RMB</text>
+        <image src="/images/sections/arraw.png"></image>
+      </view>
+      <view class="more-btn">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+    <view class="item box-shadow">
+      <view class="item-title">定期保养消费</view>
+      <view class="item-content text-ellipsis">
+       更换机油，机油滤，空气滤
+      </view>
+      <view class="split">
+        ······································
+      </view>
+      <view class="item-footer align-items-center d-flex">
+        <view class="code-label">No</view>
+        123456789
+        <image src="/images/icons/date.png"></image>
+        2018-03-02
+      </view>
+      <view class="moneny-wrap box-shadow">
+        200
+        <text>RMB</text>
+        <image src="/images/sections/arraw.png"></image>
+      </view>
+      <view class="more-btn">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+    <view class="item box-shadow">
+      <view class="item-title">定期保养消费</view>
+      <view class="item-content text-ellipsis">
+       更换机油，机油滤，空气滤
+      </view>
+      <view class="split">
+        ······································
+      </view>
+      <view class="item-footer align-items-center d-flex">
+        <view class="code-label">No</view>
+        123456789
+        <image src="/images/icons/date.png"></image>
+        2018-03-02
+      </view>
+      <view class="moneny-wrap box-shadow">
+        200
+        <text>RMB</text>
+        <image src="/images/sections/arraw.png"></image>
+      </view>
+      <view class="more-btn">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+  </view>
+</view>

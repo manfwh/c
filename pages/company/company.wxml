@@ -1,0 +1,73 @@
+<!-- 装饰条  -->
+<view class="bars">
+  <view class="bar bar1"></view>
+  <view class="bar bar2"></view>
+  <view class="bar bar3"></view>
+</view>
+
+<view class="container">
+  <!-- 好车 开始 -->
+  <view class="panel box-shadow introduce">
+    <view class="panel-body">
+      <image class="company-pic" src="/images/company-pic.jpg"></image>
+      <view>
+        <view class="title">兜兜好车</view>
+        <view class="sub-title">DOUDOUHAOCHE</view>
+        <view class="time">2018 02 08</view>
+      </view>
+      <view class="company-des">
+        兜兜好车是目前国内著名的集团化汽车销售服务企业之一，集多品牌的整车销售、维修服务、零配件供应、信息咨询于一体，为消费者提供全面、权威的服务。公司总部位于北京海淀区，下设奥迪北京店(ABDA)、保时捷亦庄店(PBDA)、斯柯达亚市店(SYS)、广丰天津店(TTJ)、奔驰海淀店(BHD)和正在筹建中的奥迪天津(ATJ)Terminal城市展厅，多品牌集团化经营模式，降低了企业经营风险，从高端产品到中级产品，从A级车到D级车，这些合理的产品布局让公司赢得更大的市场份额。
+      </view>
+    </view>
+
+  </view>
+  <!-- 好车 结束 -->
+  <!-- 汽修 开始  -->
+  <view class="panel box-shadow">
+    <view class="panel-body">
+      <view class="head">
+        <view class="dot"></view>
+        <view class="title">兜兜汽修</view>
+      </view>
+      <view class="map-wrap">
+        <map style="width: 100%;height: 322rpx" longitude="{{longitude}}" latitude="{{latitude}}" markers="{{markers}}" circles="{{circles}}"></map>
+      </view>
+      <view class="foot">
+        <view class="address">
+          位置：太原市 小店区 长风街体育西路口 长风画卷A座1单元1402 电话：13111116575
+        </view>
+        <view class="concat" bindtap='phoneCall'>
+          <image src="/images/concat.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 汽修结束  -->
+  <!-- 修理大师 开始  -->
+  <view class="panel" class="dashiList">
+    <view class="panel-body">
+      <view class="panel-title">
+        <image src="/images/panel-title2.png"></image>
+        <view class="tit-wrap d-flex">
+          <text class="tit">修理大师</text>
+          <text class="sub-tit">XIULIDASHI</text>
+        </view>
+      </view>
+      <view class="list">
+        <view wx:for="{{dashiCommets}}" class="list-item" bindtap='navigateTo' data-url="../technician/technician?technicianId={{index}}">
+          <view class="avatar-wrap"><image class="avatar" src="/images/avatar.jpg"></image></view>
+          <view class="comment-wrap">
+            <view class="name">{{item.name}}</view>
+            <view class="content">{{item.content}}</view>
+            <view class="like">
+              <image src="/images/xing.png"></image> 368
+              <image src="/images/star.png"></image> 544
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 修理大师 结束  -->
+
+</view>

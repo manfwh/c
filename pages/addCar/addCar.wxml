@@ -1,0 +1,112 @@
+<view class="bars">
+  <view class="top-bar bar1"></view>
+  <view class="top-bar bar2"></view>
+</view>
+
+<view class="container">
+  <view class="panel">
+    <view class="panel-title">
+      <image src="/images/panel-title2.png"></image>
+      <view class="tit-wrap d-flex">
+        <text class="tit">请完善您的车辆信息</text>
+        <text class="sub-tit">PLEASE FILL IN YOUR APPLICATION INFORMATION</text>
+      </view>
+    </view>
+    <form bindsubmit="submit">
+      <!-- <view wx:if="{{form.$invalidMsg && form.$dirty}}" class="invalid">
+        {{form.$invalidMsg}}
+      </view> -->
+      <!-- 车牌号  -->
+      <view class="form-group box-shadow">
+        <image class="label" src="/images/step2-3.png"></image>
+        <input type="text" name="plateNumber" bindblur="validate" placeholder='车牌号码如: 晋A88888' data-name="plate" data-validator="required,plate" confirm-type="next" value="{{plate}}"></input>
+        <icon wx:if="{{form.plate!==undefined}}" type="{{form.plate?'warn':'success'}}" size="16" />
+      </view>
+      <block wx:if="{{!isAddCarPage}}">
+        <!-- 姓名  -->
+        <view class="form-group box-shadow">
+          <image class="label" src="/images/step1-1.png"></image>
+          <input type="text" name="name" placeholder='请在此处填写您的姓名' bindblur="validate" data-name="name" data-validator="required,name" value="{{name}}" confirm-type="next"></input>
+          <icon wx:if="{{form.name!==undefined}}" type="{{form.name?'warn':'success'}}" size="16" />
+        </view>
+        <!-- 性别  -->
+        <view class="form-group box-shadow">
+          <image class="label" src="/images/step1-2.png"></image>
+          <input type="text" name="gender" placeholder='请在此处填写您的性别' disabled value='{{gender}}'></input>
+          <view class="gender-group">
+            <radio-group class="radio-group" bindchange="genderChange">
+              <label for="man">
+                <radio id="man" hidden name="gender" value='男' /> 男
+                <view class="radio">
+                  <view wx:if="{{gender == '男' }}" class="radio-checked"></view>
+                </view>
+              </label>
+              <label for="woman">
+                <radio id="woman" hidden name="gender" value='女' /> 女
+                <view class="radio">
+                  <view wx:if="{{gender == '女'}}" class="radio-checked"></view>
+                </view>
+              </label>
+            </radio-group>
+          </view>
+        </view>
+        <!-- 手机号  -->
+        <view class="form-group box-shadow">
+          <image class="label" src="/images/step1-3.png"></image>
+          <input type="number" bindblur="validate" data-name="phone" placeholder='请在此处填写您的手机号' data-validator="required,phone" value="{{phone}}"></input>
+          <icon wx:if="{{form.phone!==undefined}}" type="{{form.phone?'warn':'success'}}" size="16" />
+        </view>
+        <!-- 生日  -->
+        <view class="form-group box-shadow">
+          <image class="label" src="/images/step2-1.png"></image>
+          <picker value="1980-06-06" class="input" mode="date" bindchange="validate" data-name="birthday" data-validator="required" value="{{birthday}}">{{birthday}}</picker>
+          <icon wx:if="{{birthday!=='生日'}}" type="success" size="16" />
+        </view>
+      </block>
+
+      <!-- 车品牌  -->
+      <view class="form-group box-shadow">
+        <image class="label" src="/images/step2-2.png"></image>
+        <input type="text" data-name="brand" value="{{brand}}" placeholder="选择品牌" confirm-type="next" disabled bindtap="selectBrand"></input>
+        <picker class="input" bindchange="validate" data-name="model" range="{{models}}" range-key="name" data-validator="required">
+          <text wx:if="{{model}}">{{model}}</text>
+          <text hidden="{{model}}">选择车型</text>
+        </picker>
+        <icon wx:if="{{form.model!== undefined}}" type="{{form.model?'warn':'success'}}" size="16" />
+      </view>
+      <!-- 款式  -->
+      <!-- <view class="form-group box-shadow">
+          <image class="label" src="/images/step2-1.png"></image>
+          <picker value="1980-06-06" class="input" mode="date" bindchange="validate" data-type="birthday" data-name="birthday" data-validator="required" value="{{birthday}}">{{birthday}}</picker>
+          <icon wx:if="{{birthday!=='生日'}}" type="success" size="16" />
+        </view> -->
+      <!-- 保险  -->
+      <view class="form-group box-shadow">
+        <image class="label" src="/images/step3-1.png"></image>
+        <picker class="input" mode="date" bindchange="validate" data-name="insuranceMaturity" data-validator="required" value="{{insuranceMaturity}}">{{insuranceMaturity}}</picker>
+        <icon wx:if="{{insuranceMaturity!=='保险到期日'}}" type="success" size="16" />
+      </view>
+      <!-- 年检  -->
+      <view class="form-group box-shadow">
+        <image class="label" src="/images/step3-2.png"></image>
+        <picker class="input" mode="date" bindchange="validate" data-name="yearlyInspectionDate" data-validator="required" value="{{yearlyInspectionDate}}">{{yearlyInspectionDate}}</picker>
+        <icon wx:if="{{yearlyInspectionDate!== '年检日期'}}" type="success" size="16" />
+      </view>
+      <!-- 购车日期  -->
+      <view class="form-group box-shadow">
+        <image class="label" src="/images/step3-3.png"></image>
+        <picker class="input" mode="date" bindchange="validate" data-name="purchaseDate" data-validator="required" value="{{purchaseDate}}">{{purchaseDate}}</picker>
+        <icon wx:if="{{purchaseDate!== '购车日期'}}" type="success" size="16" />
+
+
+      </view>
+
+
+
+      <button class="submitBtn" form-type="submit">提交</button>
+    </form>
+  </view>
+</view>
+<view class=" bar bar3"></view>
+<!-- <view class="bar bar4"></view> -->
+<view class="bar bar5"></view>

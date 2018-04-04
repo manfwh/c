@@ -1,0 +1,113 @@
+.wrap {
+  height: 100%;
+  position: relative;
+}
+
+.wrap .bg-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
+.wrap .bg-wrap .bg {
+  width: 100%;
+  height: 100%;
+}
+.detail {
+  width: 512rpx;
+  height: 594rpx;
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+  z-index: 1;
+  box-sizing: border-box;
+  padding-top: 60rpx;
+  padding-left: 40rpx;
+}
+.detail .bg-pic {
+  width: 512rpx;
+  height: 594rpx;
+  position: absolute;
+  top: 0; left: 0;
+  z-index: -1;
+}
+.detail .coupon-name {
+  font-size: 40rpx;
+  color: #3a59e0;
+  font-weight: bold;
+}
+.detail .coupon-name text {
+  font-size: 32rpx;
+}
+.detail .split,.detail .wran   {
+  font-size: 26rpx;
+  color: #bdbdc1;
+}
+.erweima-wrap {
+  text-align: center;
+  color: #7c7d89;
+  font-size: 26rpx;
+}
+.erweima-wrap image{
+  display: block;
+  margin: 20rpx auto;  
+  width: 251rpx;
+  height: 247rpx;
+  border: 5rpx solid #515262;
+ 
+}
+
+.bg-bottom {
+  width: 494rpx;
+  height: 444rpx;
+  background: #3a59e0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-247rpx);
+  z-index: 1;
+}
+
+.bg-bottom .dots {
+  margin-top: 62rpx;
+  margin-left: 32rpx;
+}
+
+.bg-bottom .dots view {
+  width: 16rpx;
+  height: 16rpx;
+  background: #fff;
+  border-radius: 50%;
+  margin-bottom: 16rpx;
+}
+
+.bg-bottom .dots view:nth-child(2) {
+  background: #d8def9;
+}
+
+.bg-bottom .dots view:nth-child(2) {
+  background: #b0bdf3;
+}
+
+.header {
+  padding-top: 66rpx;
+  color: #fff;
+  font-size: 48rpx;
+}
+
+.header .text-en {
+  font-size: 38rpx;
+}
+
+.discount {
+  font-size: 150rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.discount text {
+  font-size: 32rpx;
+}

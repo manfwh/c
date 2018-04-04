@@ -1,0 +1,11 @@
+<scroll-view scroll-y scroll-into-view="{{toView}}">
+  <view class="group" wx:for="{{brands}}" id="{{item.group}}" wx:key="{{item}}">
+    <view class="group-title" >{{item.group}}</view>
+    <view class="group-list">
+      <view wx:for="{{item.data}}" wx:key="{{brand}}" wx:for-item="brand" bindtap='backView' data-brand="{{brand}}">{{brand.name}}</view>
+    </view>
+  </view>
+</scroll-view>
+<view class="nav">
+  <view wx:for="{{brands}}" wx:key="{{item}}" bindtap='scroll' data-group="{{item.group}}">{{item.group}}</view>
+</view>

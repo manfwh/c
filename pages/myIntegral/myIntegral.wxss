@@ -1,0 +1,248 @@
+.container {
+  width: 674rpx;
+}
+/* 头部样式  */
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 364rpx;
+  position: relative;
+  overflow: hidden;
+}
+.circle {
+  width: 900rpx;
+  height: 438rpx;
+  border-radius: 50%;
+  background: #285bed;
+  position: absolute;
+  left: -75rpx; top: -280rpx;
+  z-index: -5;
+}
+.avatar {
+  width: 148rpx;
+  height: 148rpx;
+  border-radius: 50%;
+  border: 4rpx solid #fff;
+  position: relative;
+}
+.avatar-bar5{
+  transform: rotate(-45deg);
+ top:50rpx;
+ left: 55%;
+  position: absolute;
+  width: 100rpx;
+  height: 22rpx;
+  border-radius: 12rpx;
+  background: linear-gradient(to right, #41cb37, rgba(255, 255, 255, .05))
+}
+.avatar-bar-wrap {
+    position: absolute; 
+   top: 30rpx;
+   left: 230rpx;
+   transform: rotate(-45deg); 
+  width: 295rpx;
+  z-index: -1;
+  height: 192rpx;
+  /* border: 1px solid #fff; */
+}
+.avatar-bar-wrap view{
+   /* position: absolute;  */
+}
+.avatar-bar1 {
+  /* left: 145rpx;
+  top: 30rpx; */
+  margin-left: 72rpx;
+  margin-bottom: 14rpx;
+  width: 136rpx;
+  height: 28rpx;
+  border-radius: 14rpx;
+  background: linear-gradient(to right, #da2eff, rgba(255, 255, 255, .05))
+}
+.avatar-bar2 {
+  width: 95rpx;
+  height: 20rpx;
+  border-radius: 10rpx;
+  background: linear-gradient(to right, #ffdc29, rgba(255, 255, 255, .05))
+}
+.avatar-bar3 {
+  margin: 16rpx 0 16rpx 26rpx;
+  width: 55rpx;
+  height: 14rpx;
+  border-radius: 7rpx;
+  background: linear-gradient(to right, #1ed255, rgba(255, 255, 255, .05))
+}
+.avatar-bar4 {
+  margin-left: 14rpx;
+  width: 112rpx;
+  height: 24rpx;
+  border-radius: 12rpx;
+  background: linear-gradient(to right, #26a7e3, rgba(255, 255, 255, .05))
+}
+
+.avatar-bar6 {
+  margin-left: 154rpx;
+  
+  width: 70rpx;
+  height: 16rpx;
+  border-radius: 8rpx;
+  background: linear-gradient(to right, #ff3f4d, rgba(255, 255, 255, .05))
+}
+.avatar-bar7 {
+  margin: 26rpx 0 16rpx 220rpx;
+  
+  width: 34rpx;
+  height: 8rpx;
+  border-radius: 4rpx;
+  background: linear-gradient(to right, #ffdd29, rgba(255, 255, 255, .05))
+}
+.username {
+  color: #cfcfd2;
+  font-size: 32rpx;
+  margin-top: 30rpx;
+}
+.level {
+  margin-top: 10rpx;
+}
+.level image {
+  width: 26rpx;
+  height: 24rpx;
+  margin-right: 10rpx;
+}
+
+/* 近日增长  */
+.title-bar {
+  width: 6rpx;
+  height: 48rpx;
+  background: #30ca5f;
+  border-radius: 1px;
+  margin-right: 10rpx;
+}
+.date {
+  align-self: flex-end;
+  font-size: 24rpx;
+  color: #808189;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+.date view {
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  border: 3rpx solid #e2f1e8;
+  margin-right: 8rpx;
+  background: #30c468;
+}
+.chart {
+  display: flex;
+  justify-content: space-between;
+  width: 672rpx;
+  height: 266rpx;
+  border-radius: 5px;
+  background: #296ee6;
+  margin: 20rpx auto 15rpx;
+}
+.chart-nums {
+  display: flex;
+  margin-top: 28rpx;
+  margin-left: 30rpx;
+}
+.jf {
+  font-size: 40rpx;
+  color: #5694ff;
+}
+.nums {
+  font-size: 40rpx;
+  color: #fff;
+  margin-left: 14rpx;
+}
+.more {
+  color: #fff;
+  font-size: 22rpx;
+  height: 44rpx;
+  align-self:flex-end;
+  margin-right: 34rpx;
+}
+.more .dots {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 10rpx;
+}
+.more .dots view {
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  margin-right: 4rpx;
+}
+.more .dots view:nth-child(1) {
+  background: #f3f3f3;
+}
+.more .dots view:nth-child(2) {
+  background: #a1d3e9;
+}
+.more .dots view:nth-child(3) {
+  background: #4fb5de;
+}
+/*累计消费  */
+.block {
+  margin-top: 20rpx;
+  width: 328rpx;
+  height: 178rpx;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  background: #fff;
+}
+.block .block-bar {
+  width: 6rpx;
+  margin-right: 28rpx;
+}
+.g-bar {
+  background: #23ce6f;  
+}
+.y-bar {
+  background: #fec836;
+}
+
+.block-title {
+  margin-top: 24rpx;
+  color: #777885;
+  font-size: 26rpx;
+}
+.block-sub-title {
+  color: #bbbbc2;
+  font-size: 18rpx;
+  line-height: 30rpx;
+}
+.block-nums {
+  font-size: 30rpx;
+  color: #bedeff;  
+}
+.block-jf {
+  
+}
+.block-num {
+  font-size: 50rpx;
+  color: #2773db;
+}
+
+
+/* 底部 按钮  */
+.btn-wrap {
+  width: 305rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  color: #fff;
+  font-size: 34rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin-top: 55rpx;
+}
+.btn-rule {
+  background: linear-gradient(to right, #2ff482, #28d741)
+}
+.btn-exchange {
+  background: linear-gradient(to right, #2f89f4, #28bcd7)
+}

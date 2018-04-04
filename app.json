@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/home/home",
+    
+    "pages/demo/demo",
+    
+    "pages/addCar/addCar",
+    
+    "pages/brands/brands",
+    
+    
+    "pages/wallet/wallet",
+    "pages/myCoupon/myCoupon",
+    "pages/message/message",
+    "pages/record/record",
+    "pages/center/center",
+    "pages/jifen/jifen",
+    "pages/me/me",
+    "pages/index/index",
+    "pages/rescue/rescue",
+    "pages/share/share",
+    "pages/myCoupon/detail/detail",
+    "pages/usedCar/usedCar",
+    "pages/activities/activities",
+    "pages/technician/technician",
+    "pages/shop/shop",
+    "pages/exchange/exchange",
+    "pages/myIntegral/myIntegral",
+    "pages/repair/repair",
+    "pages/company/company",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "",
+    "navigationBarBackgroundColor": "#285bed",
+    "navigationBarTitleText": "兜兜好车",
+    "navigationBarTextStyle": "white"
+  }
+}

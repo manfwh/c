@@ -1,0 +1,212 @@
+<view class="container">
+  <!-- 切换按钮 开始  -->
+  <view class="tabs box-shadow">
+    <view class="box-shadow" bindtap='tapToggle' data-index="0">
+      <view class="tab-btn {{tabIndex == 0 ? 'active' : ''}}">
+        <view class="active-dot"></view>
+        可用券
+        <view class="active-dot"></view>
+      </view>
+    </view>
+
+    <view class="box-shadow" bindtap='tapToggle' data-index="1">
+      <view class="tab-btn {{tabIndex == 1 ? 'active' : ''}}">
+        <view class="active-dot"></view>
+        历史券
+        <view class="active-dot"></view>
+      </view>
+    </view>
+  </view>
+  <!--切换按钮 结束  -->
+  <!-- 券列表内容 开始  -->
+  <view class="tab-content" hidden="{{tabIndex != 0}}">
+    <view class='coupon coupon1'>
+      <view class="left">
+        <view class="coupon-name">代金券</view>
+        <view class="coupon-price">￥50</view>
+        <view class="coupon-status">未使用</view>
+        <view class="dots">
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+        </view>
+      </view>
+      <view class="right">
+        <view class="coupon-title">兜兜汽修50元代金券</view>
+        <view class="coupon-rules test-hidden">该券只能在规定期间内使用 不可保养</view>
+        <view class="coupon-date">
+          <view class="dot dot1"></view>
+          开始时间：2018.02.22  00:00
+        </view>
+        <view class="coupon-date">
+          <view class="dot dot2"></view>
+          结束时间：2018.02.22  00:00
+        </view>
+        <view class="coupon-statusPic">
+          <image src="/images/sections/20.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class='coupon coupon2'>
+      <view class="left">
+        <view class="coupon-name">折扣券</view>
+        <view class="coupon-price">￥50</view>
+        <view class="coupon-status">未使用</view>
+        <view class="dots">
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+        </view>
+      </view>
+      <view class="right">
+        <view class="coupon-title">兜兜汽修50元代金券</view>
+        <view class="coupon-rules test-hidden">该券只能在规定期间内使用 不可保养</view>
+        <view class="coupon-date">
+          <view class="dot dot1"></view>
+          开始时间：2018.02.22  00:00
+        </view>
+        <view class="coupon-date">
+          <view class="dot dot2"></view>
+          结束时间：2018.02.22  00:00
+        </view>
+        <view class="coupon-statusPic">
+          <image src="/images/sections/25.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class='coupon coupon3'>
+      <view class="left">
+        <view class="coupon-name">代金券</view>
+        <view class="coupon-price">￥50</view>
+        <view class="coupon-status">未使用</view>
+        <view class="dots">
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+        </view>
+      </view>
+      <view class="right">
+        <view class="coupon-title">兜兜汽修50元代金券</view>
+        <view class="coupon-rules test-hidden">该券只能在规定期间内使用 不可保养</view>
+        <view class="coupon-date">
+          <view class="dot dot1"></view>
+          开始时间：2018.02.22  00:00
+        </view>
+        <view class="coupon-date">
+          <view class="dot dot2"></view>
+          结束时间：2018.02.22  00:00
+        </view>
+        <view class="coupon-statusPic">
+          <image src="/images/sections/24.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="tab-content" hidden="{{tabIndex != 1}}">
+    <view class='coupon expire'>
+      <view class="left">
+        <view class="coupon-name">代金券</view>
+        <view class="coupon-price">￥50</view>
+        <view class="coupon-status">未使用</view>
+        <view class="dots">
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+        </view>
+      </view>
+      <view class="right">
+        <view class="coupon-title">兜兜汽修50元代金券</view>
+        <view class="coupon-rules test-hidden">该券只能在规定期间内使用 不可保养</view>
+        <view class="coupon-date">
+          <view class="dot dot1"></view>
+          开始时间：2018.02.22  00:00
+        </view>
+        <view class="coupon-date">
+          <view class="dot dot2"></view>
+          结束时间：2018.02.22  00:00
+        </view>
+        <view class="coupon-statusPic">
+          <image src="/images/sections/27.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class='coupon coupon3'>
+      <view class="left">
+        <view class="coupon-name">代金券</view>
+        <view class="coupon-price">￥50</view>
+        <view class="coupon-status">未使用</view>
+        <view class="dots">
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+          <view></view>
+        </view>
+      </view>
+      <view class="right">
+        <view class="coupon-title">兜兜汽修50元代金券</view>
+        <view class="coupon-rules text-hidden">该券只能在规定期间内使用 不可保该券只能在规定期间内使用 不可保该券只能在规定期间内使用 不可保养</view>
+        <view class="coupon-date">
+          <view class="dot dot1"></view>
+          开始时间：2018.02.22  00:00
+        </view>
+        <view class="coupon-date">
+          <view class="dot dot2"></view>
+          结束时间：2018.02.22  00:00
+        </view>
+        <view class="coupon-statusPic">
+          <image src="/images/sections/23.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 券列表内容 开始  -->
+</view>
