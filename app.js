@@ -16,7 +16,7 @@ App({
             success: res => {
               // 发送 res.code 到后台换取 openId, sessionKey, unionId
               wx.request({
-                url: 'http://192.168.31.249:3000/api/login',
+                url: 'http://192.168.31.104:7001/mini/login',
                 method: 'POST',
                 data: {
                   code: res.code
