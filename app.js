@@ -19,11 +19,12 @@ App({
                 url: 'http://192.168.31.104:7001/mini/login',
                 method: 'POST',
                 data: {
-                  code: res.code
+                  code: res.code,
+                  userInfo
                 },
                 success: res => {
                   console.log(res)
-                  wx.setStorageSync('openId', res.data.openId);
+                  wx.setStorageSync('openId', res.data.openid);
                   this.globalData.userInfo = Object.assign(userInfo, res.data)
                   if (this.userInfoReadyCallback) {
                     this.userInfoReadyCallback(this.globalData.userInfo)
